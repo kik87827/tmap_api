@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="./assets/css/common.css" />
+	<script src="./assets/js/jquery-3.4.1.min.js"></script>
+	<script src="./assets/js/dynamicListener.min.js"></script>
+	<script src="./assets/js/swiper.min.js"></script>
+	<script src="./assets/js/ui.js"></script>
+	<title></title>
+</head>
+
+<body class="front_body">
+	<div class="page_wrap">
+		<div class="page_wrap">
+			<a href="#" class="btn_guide">레이어팝업</a>
+		</div>
+		<!-- popup -->
+		<div class="popup_wrap" id="samplePopup">
+			<div class="bg_dim"></div>
+			<div class="popup_item">
+				<div class="popup_item_in">
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.
+				</div>
+				<div class="notice_btn_row">
+					<div class="notice_btn_main_cols">
+						<a href="javascript:void(0)" class="btn_today_close"><i class="ico_check"></i><span class="btn_today_close_text">오늘 하루 이 창을 열지 않음</span></a>
+					</div>
+					<div class="notice_btn_sub_cols">
+						<a href="javascript:void(0)" class="btn_notice_close close_trigger">닫기</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // popup -->
+		<script>
+			// 선언
+			var designPopup = new DesignPopup({
+				selector: "#samplePopup",
+				beforeCallback() {
+					console.log('beforeCallback');
+				},
+				callback() {
+					console.log('callback');
+				}
+			});
+			// show 호출
+			designPopup.popupShow();
+
+			document.querySelector(".btn_guide").addEventListener("click", (e) => {
+				designPopup.popupShow();
+			});
+		</script>
+	</div>
+</body>
+
+</html>
