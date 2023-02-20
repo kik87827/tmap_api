@@ -277,7 +277,13 @@ function DesignPopup(option) {
 
   this.layer_wrap_parent = document.querySelector(".layer_wrap_parent");
 
-  this.bindEvent(this.selector);
+
+
+  // console.log(this.selector.querySelectorAll(".close_trigger"));
+
+
+
+  this.bindEvent();
 }
 
 
@@ -325,7 +331,6 @@ DesignPopup.prototype.popupShow = function() {
     }
   }, 400);
   if (!!this.design_popup_wrap_active) {
-    console.log(this.design_popup_wrap_active);
     this.design_popup_wrap_active.forEach((element, index) => {
       if (this.design_popup_wrap_active !== this.selector) {
         element.classList.remove("motion");
@@ -384,7 +389,7 @@ DesignPopup.prototype.popupHide = function() {
 DesignPopup.prototype.bindEvent = function() {
   this.btn_closeTrigger = this.selector.querySelectorAll(".close_trigger,.btn_closeitem");
   this.btn_close = this.selector.querySelectorAll(".btn_popup_close");
-  this.bg_design_popup = this.selector.querySelector(".popup_wrap .bg_dim");
+  this.bg_design_popup = this.selector.querySelector(".bg_dim");
 
   var closeItemArray = [...this.btn_closeTrigger, ...this.btn_close];
 
@@ -402,3 +407,26 @@ DesignPopup.prototype.bindEvent = function() {
     });
   }
 };
+
+
+/**
+ * cookie
+ */
+function setCookie(c_name, value, exdays) {
+  var exdate = new Date();
+  exdate.setDate(exdate.getDate() + exdays);
+  var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
+  document.cookie = c_name + "=" + c_value;
+}
+
+function getCookie(c_name) {
+  var i, x, y, ARRcookies = document.cookie.split(";");
+  for (i = 0; i < ARRcookies.length; i++) {
+    x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
+    y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
+    x = x.replace(/^\s+|\s+$/g, "");
+    if (x == c_name) {
+      return unescape(y);
+    }
+  }
+}

@@ -1,15 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="./assets/css/common.css" />
+	<script src="./assets/js/jquery-3.4.1.min.js"></script>
+	<script src="./assets/js/dynamicListener.min.js"></script>
+	<script src="./assets/js/swiper.min.js"></script>
+	<script src="./assets/js/ui.js"></script>
+	<title></title>
 </head>
 
-<body>
+<body class="front_body">
+	<div class="page_wrap">
+		<section class="main_guide_wrap">
+			내용이 들어갑니다.
+		</section>
+		<footer class="footer_wrap">
+			<div class="footer_inpix">
+				<div class="footer_main_cols">
+					<span class="footer_logo"><span class="hdtext">TMAP MOBILITY</span></span>
+					<address class="footer_address">서울 중구 삼일대로 343 (우)04538 (지번) 저동1가 114</address>
+					<p class="copyright">COPYRIGHT TMAP MOBILITY CO. LTD. ALL RIGHTS RESERVED.</p>
+				</div>
+				<div class="footer_sub_cols">
+					<ul class="footer_menu_list">
+						<li><a href="#" class="footer_menu">공지사항</a></li>
+						<li><a href="#" class="footer_menu">이용약관</a></li>
+						<li><a href="#" class="footer_menu">제휴 문의</a></li>
+						<li><a href="#" class="footer_menu">개발 문의</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<!-- popup -->
+		<div class="popup_wrap" id="noticePopup">
+			<div class="bg_dim"></div>
+			<div class="popup_item">
+				<div class="popup_item_in">
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.
+				</div>
+				<div class="notice_btn_row">
+					<div class="notice_btn_main_cols">
+						<a href="javascript:void(0)" class="btn_today_close"><i class="ico_check"></i><span class="btn_today_close_text">오늘 하루 이 창을 열지 않음</span></a>
+					</div>
+					<div class="notice_btn_sub_cols">
+						<a href="javascript:void(0)" class="btn_notice_close close_trigger">닫기</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // popup -->
+		<script>
+			/* popup */
+			// 선언
+			var noticePopup = new DesignPopup({
+				selector: "#noticePopup",
+				beforeCallback() {
+					console.log('beforeCallback');
+				},
+				callback() {
+					console.log('callback');
+				}
+			});
+			// show 호출
+			//noticePopup.popupShow();
 
+			/* setcookie */
+			document.querySelectorAll(".btn_today_close").forEach((element, index) => {
+				element.addEventListener("click", (e) => {
+					e.preventDefault();
+					setCookie('today', element.closest(".popup_wrap").getAttribute("id"), 1);
+					noticePopup.popupHide();
+				});
+			});
+			if (getCookie('today') === "noticePopup") {
+				noticePopup.popupHide();
+			}
+			console.log(getCookie('today') === "noticePopup");
+
+
+			// 퍼블확인용
+			let url = window.location.href.split('?')[1];
+			let url_2 = url !== undefined ? url.split('#')[0] : null;
+			if (url_2 === "popup") {
+				noticePopup.popupShow();
+			}
+		</script>
+	</div>
 </body>
 
 </html>
