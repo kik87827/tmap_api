@@ -1343,6 +1343,41 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
   white-space: nowrap;
 }
 
+.btn_gotop_wrap {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 20;
+}
+
+.btn_gotop {
+  transition: 700ms;
+  transform: translateY(150px);
+  display: block;
+  opacity: 0;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  border-radius: 100%;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.16);
+  background-image: linear-gradient(to bottom, #0264ff, #2ed9b7);
+}
+.btn_gotop:after {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url("../images/ic_gotop_x2.png") no-repeat 50% 50%/100% auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn_gotop.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 @media (max-width: 1280px) {
   .header_inpix {
     min-height: 2.75rem;
@@ -1388,6 +1423,9 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
   }
   .middle_single_content_row {
     margin-top: 3.4375rem;
+  }
+  .btn_gotop_wrap {
+    display: none !important;
   }
   .footer_inpix {
     padding: 3.125rem 1.25rem;
