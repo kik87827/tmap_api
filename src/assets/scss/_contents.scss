@@ -181,3 +181,90 @@
 @media (max-width:$breakpoint-smallphones){
     
 }
+
+
+/* guide */
+
+.img_step_list{
+    > li{
+        &:last-of-type{}
+    }
+}
+.img_step_item{
+    &.ico_02{}
+    &.ico_03{}
+    &.ico_04{}
+    &.ico_05{}
+    &.ico_06{}
+}
+.img_step_text{}
+.define_step_list{
+    > li{
+        &:last-of-type{} 
+    }
+}
+.step_title_row{
+
+}
+.step_title_main{
+
+}
+.step_title_bullet{}
+.step_title_text{}
+.step_title_else{
+    > .btn_text_item{}
+}
+.btn_text_item{
+    &.ico_direct{
+        &:after{}
+    }
+    &[class*='ico_']{
+        &:after{}
+    }
+}
+.text_item_in{}
+.step_content_row{
+
+}
+.indent_order_list{
+    > li{
+        &:last-of-type{}
+    }
+}
+.indent_order_number{}
+.indent_order_text_g{
+
+}
+.indent_oder_para{}
+.dash_list{
+    > li{
+        &:before{}
+        &:last-of-type{}
+    }
+}
+.dash_text_g{}
+.dot_text_list{
+    > li{
+        &:before{}
+        &:last-of-type{}
+    }
+}
+.dot_text_g{}
+.indent_order_para{}
+.eximg_wrap{
+    > img{}
+}
+.primay_text_item{
+    *{}
+}
+.code_item_list{
+    > li{
+        &:last-of-type{}
+    }
+}
+.code_title_row{}
+.code_title_item{}
+.code_mark{}
+.code_title{}
+.code_content_row{}
+.code_item{}
