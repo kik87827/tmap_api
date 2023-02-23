@@ -192,7 +192,7 @@
     display:flex;justify-content:space-between; text-align: center;
     > li{
         flex:0 0 rem(160);position:relative;
-        &:after{display:block;content:'';width:rem(24);height:rem(160);background:url("../images/ic_arrow_imgnext@3x.png") no-repeat 0 50%/100% auto;position:absolute;top:0;left:calc(100% + rem(30));}
+        &:after{display:block;content:'';width:rem(24);height:rem(160);background:url("../images/ic_arrow_imgnext@3x.png") no-repeat 50% 50%/100% auto;position:absolute;top:0;left:calc(100% + rem(30));}
         &:last-of-type{
             &:after{display:none;}
         }
@@ -226,7 +226,7 @@
     flex:0;padding: rem(10) rem(24);border-radius: rem(100);font-size: rem(18);font-weight: 700;line-height:1.4;text-align: center;color: #fff;white-space: nowrap;display:flex;align-items: center;
     background-image: linear-gradient(to right, #0264ff, #2ed9b7);
 }
-.step_title_text{font-size: rem(26);font-weight: 700;line-height: 1;color: #000;display:inline-block;margin-left:rem(10);}
+.step_title_text{font-size: rem(26);font-weight: 700;line-height: 1;color: #000;display:inline-block;margin-left:rem(12);}
 .step_title_else{
     flex:0;display:flex;justify-content:flex-end;align-items:center;
     > .btn_text_item{}
@@ -252,7 +252,7 @@
 }
 .indent_order_number{display:inline-block;width:rem(28);height:rem(28);line-height:rem(28);font-size:rem(16);white-space: nowrap;color:#000000;font-weight:700;text-align: center;background:#f2f5fb;border-radius: 100%;box-sizing: border-box;margin-right:rem(10);}
 .window .indent_order_number{
-    padding:0 0 0 rem(2);
+    line-height:rem(26);
 }
 .indent_order_text_g{
     flex:1;min-width:0;color: #666;font-size:rem(16);line-height:1.4;padding-top:rem(2);
@@ -263,8 +263,8 @@
 }
 .dash_list{
     > li{
-        position:relative;margin-top:rem(10);padding-left:rem(15);word-break:keep-all;
-        &:before{display:block;content:'-';position:absolute;top:0;left:0;}
+        position:relative;margin-top:rem(10);padding-left:rem(12);word-break:keep-all;
+        &:before{display:block;content:'-';position:absolute;top:rem(-1);left:0;}
         &:last-of-type{}
     }
 }
@@ -320,5 +320,71 @@
     }
     .step_title_text{font-size: rem(22);}
 
-    .code_mark{width:rem(12);height:rem(12);flex-basis: rem(12);margin-right:rem(12);}
+    .code_mark{width:rem(12);height:rem(12);flex-basis: rem(12);margin-right:rem(8);}
+    .code_content_row{margin-top:rem(12)}
+    .code_item_list{
+        margin-top:rem(40);
+        >li{margin-top:rem(30)}
+    }
+}
+
+@media (max-width:$breakpoint-phones){
+    .img_step_list{
+        flex-wrap:wrap;margin-bottom:rem(-42);
+        > li{
+            flex:0 0 50%;padding-bottom:rem(42);
+            &:after{background-size:rem(18) auto}
+            &:nth-of-type(2n){
+                &:after{left:0;height:rem(24);width:100%;background:url("../images/ic_arrow_imgdown@3x.png") no-repeat 50% 50%/rem(18) auto;bottom:rem(10);top:auto;}
+            }
+            &:nth-of-type(2n+1):not(:first-of-type){
+                &:after{background-image:url("../images/ic_arrow_imgreverse@3x.png");}
+            }
+        }
+    }
+    .img_step_text{margin-top:rem(10);font-size:rem(14);}
+    .text_item_in{display:none;}
+    .define_step_list{margin-top:rem(60);
+        > li{margin-bottom:rem(60);}
+    }
+    .step_title_bullet{padding:rem(6) rem(20);}
+    .step_title_text{font-size:rem(16);}
+    .indent_order_text_g{font-size:rem(14);padding-top:rem(4)}
+    .dash_list{
+        > li{padding-left:rem(10)}
+    }
+    .indent_order_list{
+        > li{
+            margin-bottom:rem(16);
+            
+        }
+    }
+    .eximg_wrap{margin-top:rem(16);}
+    .step_title_text{margin-left:rem(8)}
+    .dot_text_list{font-size:rem(14);
+        >li{
+            &:before{top:rem(8);width:rem(6);height:rem(6);}
+        }
+    }
+    .indent_order_number{font-size:rem(14)}
+
+    .code_title{font-size:rem(14);}
+    .step_content_row{margin-top:rem(16);}
+    .code_item_list{margin-top:rem(30);}
+}
+
+
+
+/* main 공지팝업 */
+.notice_popup_logo{margin-bottom:rem(30);width:rem(208);height:rem(24);background:url("../images/logo_tmapapi_b@3x.png") no-repeat 0 0/100% auto;}
+.notice_popup_cont{
+    font-size:rem(16);color:#666;
+    *{font-size:rem(16);color:#666;}
+}
+@media (max-width:$breakpoint-tablets){
+    .notice_popup_logo{margin-bottom:rem(20)}
+    .notice_popup_cont{font-size:rem(14);}
+}
+@media (max-width:$breakpoint-phones){
+    .notice_popup_logo{width:rem(168);height:rem(20);}
 }
