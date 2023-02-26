@@ -21,11 +21,176 @@
 						<p class="middle_right_title_copy">출발지/목적지에 대한 대중교통 경로 탐색 결과를 확인할 수 있습니다.</p>
 					</div>
 					<div class="middle_right_content_row">
-						내용이 들어갑니다.
+						<div class="apiform_wrap">
+							<div class="apiform_field">
+								<div class="form_box">
+									<!--  -->
+									<div class="form_row search_field_wrap" name="search_form" data-rowCount="3" id="search_form">
+										<div class="form_input_item search_field" data-name="value_check">
+											<input type="text" class="form_input" placeholder="출발지 좌표를 입력해주세요.">
+										</div>
+										<!-- layer -->
+										<div class="auto_word_layer">
+											<div class="auto_word_list_wrap">
+												<ul class="auto_word_list">
+													<li><a href="javascript:;" class="auto_word_item">티스테이션</a></li>
+													<li><a href="javascript:;" class="auto_word_item">티맵모빌리티</a></li>
+													<li><a href="javascript:;" class="auto_word_item">티파니</a></li>
+												</ul>
+											</div>
+										</div>
+										<!-- // layer -->
+									</div>
+									<!-- // -->
+									<!--  -->
+									<div class="form_row search_field_wrap" name="search_form" data-rowCount="3" id="search_form2">
+										<div class="form_input_item search_field" data-name="value_check">
+											<input type="text" class="form_input" placeholder="도착지 좌표를 입력해주세요.">
+										</div>
+										<!-- layer -->
+										<div class="auto_word_layer">
+											<div class="auto_word_list_wrap">
+												<ul class="auto_word_list">
+													<li><a href="javascript:;" class="auto_word_item">티스테이션</a></li>
+													<li><a href="javascript:;" class="auto_word_item">티맵모빌리티</a></li>
+													<li><a href="javascript:;" class="auto_word_item">티파니</a></li>
+													<li><a href="javascript:;" class="auto_word_item">티스테이션</a></li>
+												</ul>
+											</div>
+										</div>
+										<!-- // layer -->
+									</div>
+									<!-- // -->
+									<div class="form_row control_row">
+										<div class="control_cols">
+											<a href="#" class="btn_textitem ico_refresh"><span class="textitem_in">다시입력</span></a>
+										</div>
+										<div class="control_cols">
+											<a href="#" class="btn_formsubmit ico_search"><span class="btn_formsubmit_in">길찾기</span></a>
+										</div>
+									</div>
+								</div>
+								<div class="api_getdata_zone">
+									<div class="api_sort_row">
+										<div class="sort_fix_cols">
+											<div class="combo_item" id="select_combo">
+												<a href="javascript:;" class="combo_target">지금 출발</a>
+												<div class="combo_option_group">
+													<div class="combo_option_scroll">
+														<ul class="combo_option_list">
+															<li><a href="javascript:;" data-value="option_0" class="combo_option">지금 출발</a></li>
+															<li><a href="javascript:;" data-value="option_1" class="combo_option">날짜 입력</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- <div class="sort_long_cols">
+											<input type="text" class="form_input input_calendar" placeholder="0000-00-00 00:00">
+											<a href="javascript:;" class="btn_sort_submit"><span class="hdtext">검색</span></a>
+										</div> -->
+									</div>
+									<div class="api_getdata_row">
+										<ul class="api_getdata_list">
+											
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="apiform_api">
+								<!-- api render -->
+								<div style="background:#ddd;height:100%;color:#000;font-size:16px;text-align:center;display:flex;align-items:center;justify-content:center;min-height:351px">
+									api render
+								</div>
+								<!-- // api render -->
+							</div>
+						</div>
+						<div class="vertical_item_wrap">
+							<div class="vertical_item">
+								<div class="vitem_title_row"><p class="vitem_title">경로 탐색 결과</p></div>
+								<div class="vitem_content_row">
+									<div class="vitem_depitem">
+										<p class="vitem_dep_title">Request</p>
+										<div class="vitem_dep_content">
+											<div class="code_item">
+												<!-- code -->
+												<div style="background-color: #202123;padding: 16px;border-radius: 8px;color:#fff;">
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample
+												</div>
+												<!-- // code -->
+											</div>
+										</div>
+									</div>
+									<div class="vitem_depitem">
+										<div class="vitem_dep_title_row">
+											<p class="vitem_dep_title">Response</p>
+											<!-- <div class="code_title_item">
+												<span class="code_mark" style="background-color:#09ec28;"></span>
+												<p class="code_title">200 – Result Sample</p>
+											</div> -->
+										</div>
+										<div class="vitem_dep_content">
+											<div class="code_item">
+												<!-- code -->
+												<div style="background-color: #202123;padding: 16px;border-radius: 8px;color:#fff;">
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample
+												</div>
+												<!-- // code -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+		<script>
+			searchForm();
+			comboFunc();
+
+			// combobox
+			comboChangeCallback({
+				target: "select_combo",
+				callback(value) {
+					console.log(value);
+				}
+			});
+
+			//calendar
+			$('.input_calendar').datetimepicker({
+				format:'Y-m-d  H:i'
+			});
+		</script>
 		@@include('./include/_footer.html')
 	</div>
 </body>

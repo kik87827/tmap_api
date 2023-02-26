@@ -1,0 +1,86 @@
+
+.data_table{
+    &.basic_table{
+        .fix_cols{width:26.84563758389262%;}
+        .long_cols{}
+    }
+    &.request_parameters_table{
+       .auto_cols.wid_01{} 
+       .auto_cols.wid_02{} 
+       .auto_cols.wid_03{} 
+       .auto_cols.wid_04{} 
+       .auto_cols.wid_05{} 
+       .long_cols{} 
+    }
+    &.response_parameters_table{
+       .auto_cols.wid_01{width:33%;} 
+       .auto_cols.wid_02{} 
+       .auto_cols.wid_03{} 
+       .auto_cols.wid_04{} 
+       .long_cols{} 
+    }
+    &.error_table{
+       .auto_cols.wid_01{} 
+       .auto_cols.wid_02{} 
+       .auto_cols.wid_03{} 
+       .long_cols{} 
+    }
+    &.trans_subway_table{
+       .auto_cols.wid_01{width:20%;} 
+       .auto_cols.wid_02{} 
+       .auto_cols.wid_03{width:20%;} 
+       .long_cols{} 
+       white-space: nowrap;
+    }
+    &.trans_bus_table{
+       .auto_cols.wid_01{width:20%;} 
+       .auto_cols.wid_02{} 
+       .auto_cols.wid_03{width:20%;} 
+       .long_cols{} 
+       white-space: nowrap;
+    }
+    &.trans_train_table{
+       .auto_cols.wid_01{width:20%;} 
+       .auto_cols.wid_02{} 
+       .auto_cols.wid_03{width:20%;} 
+       .long_cols{} 
+       white-space: nowrap;
+    }
+}
+
+@media (max-width:$breakpoint-tablets){
+   .data_table{
+      &.basic_table{
+          .fix_cols{width:rem(210);box-sizing: border-box;}
+      }
+      &.request_parameters_table{
+         min-width:rem(720);
+      }
+      &.response_parameters_table{
+         min-width:rem(720);
+      }
+      &.trans_table{
+         min-width:rem(720);
+      }
+   }
+}
+
+@media (max-width:$breakpoint-phones){
+   .data_table{
+      &.basic_table{
+         min-width:rem(730);
+      }
+   }
+}
+
+
+@media (max-width:$breakpoint-middlephones){
+   .data_table{
+      &.basic_table{
+         min-width:rem(500);
+      }
+      &.trans_table{
+         min-width:rem(500);
+      }
+   }
+}

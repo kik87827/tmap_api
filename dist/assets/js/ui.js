@@ -449,3 +449,346 @@ function getCookie(c_name) {
     }
   }
 }
+
+
+/** 
+ * 
+ */
+function swiperTable() {
+  const swiper_table = document.querySelectorAll(".swiper-drag-wrap");
+  if (swiper_table.length) {
+    swiper_table.forEach((swiperGroup, index) => {
+      const thisSwiperGroup = swiperGroup;
+      const thisSwiperSlide = thisSwiperGroup.querySelectorAll(".swiper-slide");
+      swiperGroup.setAttribute("id", "swiper0" + (index + 1));
+      if (thisSwiperSlide.length) {
+        (new Function(
+          `
+        ${swiperGroup.getAttribute("id")} = new Swiper("#${swiperGroup.getAttribute("id")}", {
+          slidesPerView: "auto",
+          freeMode: true,
+          touchRatio: 0,
+          breakpoints : {
+            768 : {
+              touchRatio: 1
+            }
+          },
+          scrollbar : {
+            el: "#${swiperGroup.getAttribute("id")} .swiper-scrollbar"
+          }
+        });
+      `
+        )());
+      }
+    });
+  }
+}
+
+
+/**
+ * 
+ */
+function comboFunc() {
+  const combo_item = document.querySelectorAll(".combo_item");
+  const combo_option_group = document.querySelectorAll(".combo_option_group");
+  addDynamicEventListener(document.body, 'click', '.combo_target', function(e) {
+    let thisTarget = e.target;
+    let thisParent = thisTarget.closest(".combo_item");
+    let thisOptionGroup = thisParent.querySelector(".combo_option_group");
+    let appendOption = null;
+    let combo_option_scroll = null;
+    if (thisOptionGroup !== null) {
+      comboInit(thisParent);
+    }
+    comboPosAction();
+    // not
+    combo_item.forEach((element) => {
+      if (element !== thisParent) {
+        element.classList.remove("active");
+      }
+    });
+    appendOption = document.querySelector(`[data-option='${thisParent.getAttribute("id")}']`);
+    combo_option_scroll = appendOption.querySelector(".combo_option_scroll");
+    appendOptionListOption = combo_option_scroll.getAttribute("data-rowCount") !== undefined ? combo_option_scroll.getAttribute("data-rowCount") : 5;
+    combo_option_group.forEach((element) => {
+      if (element !== appendOption) {
+        element.classList.remove("active");
+      }
+    });
+    thisParent.classList.toggle("active");
+    appendOption.classList.toggle("active");
+    if (appendOption.classList.contains("active")) {
+      if (combo_option_scroll.classList.contains("addHeight")) {
+        return;
+      }
+      if (appendOption.querySelectorAll("li")[appendOptionListOption] !== undefined) {
+        combo_option_scroll.style.maxHeight = `${appendOption.querySelectorAll("li")[appendOptionListOption].offsetTop+7}px`;
+      }
+      combo_option_scroll.classList.add("addHeight");
+    }
+  });
+  addDynamicEventListener(document.body, 'click', '.combo_option', function(e) {
+    let thisTarget = e.target;
+    let thisParent = thisTarget.closest(".combo_option_group");
+    let thisTargetText = thisTarget.textContent;
+    let comboCallItem = document.querySelector(`[id='${thisParent.getAttribute('data-option')}']`);
+    let comboCallTarget = comboCallItem.querySelector(".combo_target");
+
+    if (thisTarget.classList.contains("disabled")) {
+      return;
+    }
+    comboCallTarget.textContent = thisTargetText;
+    thisParent.classList.remove("active");
+    comboCallItem.classList.remove("active");
+  });
+  document.addEventListener("click", (e) => {
+    if (e.target.closest(".combo_item") !== null) {
+      return;
+    }
+    comtoReset();
+  });
+
+  let currentWid = window.innerWidth;
+  window.addEventListener("resize", () => {
+    if (currentWid !== window.innerWidth) {
+      comboPosAction();
+    }
+    currentWid = window.innerWidth;
+  })
+
+  function comtoReset() {
+    const combo_item = document.querySelectorAll(".combo_item");
+    const combo_option_group = document.querySelectorAll(".combo_option_group");
+
+    combo_item.forEach((element) => {
+      element.classList.remove("active");
+    });
+    combo_option_group.forEach((element) => {
+      element.classList.remove("active");
+    });
+  }
+
+  function comboInit() {
+    const combo_item = document.querySelectorAll(".combo_item");
+    const appBody = document.querySelector(".page_wrap");
+
+    combo_item.forEach((element, index) => {
+      let thisElement = element;
+      let option_group = thisElement.querySelector(".combo_option_group");
+      if (element.getAttribute("id") === null) {
+        thisElement.setAttribute("id", 'combo_item_' + index);
+        option_group.setAttribute("data-option", 'combo_item_' + index);
+      } else {
+        option_group.setAttribute("data-option", thisElement.getAttribute("id"));
+      }
+      if (element.closest(".fullpop_contlow") !== null) {
+        element.closest(".fullpop_contlow").appendChild(option_group);
+      } else {
+        appBody.appendChild(option_group);
+      }
+    });
+  }
+
+  function comboPosAction() {
+    const appendOption = document.querySelectorAll(".combo_option_group");
+    appendOption.forEach((element, index) => {
+      let comboCall = document.querySelector(`[id='${element.getAttribute("data-option")}']`);
+      if (!comboCall) {
+        return;
+      }
+      let combo_top = window.scrollY + comboCall.getBoundingClientRect().top;
+      let fullpop_contlow_top = 0;
+      let combo_left = comboCall.getBoundingClientRect().left;
+      let fullpop_contlow_left = 0;
+
+      if (comboCall.closest(".fullpop_contlow") !== null) {
+        fullpop_contlow_top = comboCall.closest(".fullpop_contlow").getBoundingClientRect().top;
+        fullpop_contlow_left = comboCall.closest(".fullpop_contlow").getBoundingClientRect().left;
+        element.setAttribute("style", `
+                    top : ${(combo_top - fullpop_contlow_top) + comboCall.getBoundingClientRect().height - 1}px; 
+                    left : ${combo_left - fullpop_contlow_left}px;
+                    width : ${ comboCall.getBoundingClientRect().width }px;
+                `)
+      } else {
+        element.setAttribute("style", `
+                    top : ${combo_top + comboCall.getBoundingClientRect().height - 1}px; 
+                    left : ${combo_left}px;
+                    width : ${ comboCall.getBoundingClientRect().width }px;
+                `)
+      }
+    });
+  }
+}
+
+function comboChangeCallback(option) {
+  addDynamicEventListener(document.body, 'click', `[data-option='${option.target}'] .combo_option`, function(e) {
+    let thisEventObj = e.target;
+    let thisEventObjValue = thisEventObj.getAttribute("data-value");
+    if ("callback" in option) {
+      option.callback(thisEventObjValue);
+    }
+  });
+}
+
+
+
+/* search  */
+function searchForm() {
+  const auto_word_layer = document.querySelectorAll(".auto_word_layer");
+  const auto_word_item = document.querySelectorAll(".auto_word_item");
+  const searchFieldWrap = document.querySelectorAll(".search_field_wrap");
+  const searchInput = document.querySelectorAll(".search_field_wrap .form_input");
+  let appendLayer = null;
+  const appBody = document.querySelector(".page_wrap");
+  if (searchInput.length) {
+    searchInput.forEach((element, index) => {
+      const eachElement = element;
+      const eachElementParent = element.closest(".search_field_wrap");
+      const eachElementField = element.closest(".search_field");
+      const eachElementLayer = eachElementParent.querySelector(".auto_word_layer");
+
+      eachElement.addEventListener("focus", (e) => {
+        searchFieldWrap.forEach((item) => {
+          resetLayer(item);
+        });
+        if (eachElementLayer !== null) {
+          autoLayerInit(eachElementParent, eachElementLayer, index);
+          autoLayerPos(eachElementParent);
+        }
+        if (eachElementField !== null) {
+          eachElementField.classList.add("active");
+        }
+      });
+      eachElement.addEventListener("input", (e) => {
+        let thisEventObj = e.currentTarget;
+
+
+
+        eachElementField.classList.add("typing");
+        valueCheck(thisEventObj, eachElementParent);
+      });
+      eachElement.addEventListener("focusout", (e) => {
+        let thisEventObj = e.currentTarget;
+        eachElementField.classList.remove("typing");
+        if (!!eachElementField) {
+          eachElementField.classList.remove("active");
+        }
+        //valueCheck(thisEventObj, eachElementParent);
+        //resetLayer(eachElementParent);
+      });
+      // eachElementReset.addEventListener("click", (e) => {
+      //   let thisEventInputObj = eachElementParent.querySelector(".form_input");
+      //   thisEventInputObj.value = "";
+      //   eachElementParent.classList.remove("value_true");
+      //   if (eachElementParent.getAttribute("data-autoLayer") == "true") {
+      //     document.querySelector(`[data-autoLayer='${eachElementParent.getAttribute("id")}']`).classList.remove("auto_mode");
+      //   }
+      // });
+    });
+
+    if (auto_word_item.length) {
+      auto_word_item.forEach((element) => {
+        element.addEventListener("click", (e) => {
+          let thisEventObj = e.currentTarget;
+          let thisEventParentLayer = thisEventObj.closest(".auto_word_layer");
+          let thisEventParentCall = document.querySelector(`[id='${thisEventParentLayer.getAttribute("data-autolayer")}']`);
+          let thisEventParentCallInput = thisEventParentCall.querySelector(".form_input");
+
+          if (thisEventObj.classList.contains("disabled")) {
+            return;
+          }
+          thisEventParentCallInput.value = thisEventObj.textContent;
+          thisEventParentLayer.classList.remove("auto_mode");
+        });
+      });
+    }
+
+    document.body.addEventListener("click", (e) => {
+      if (e.target.closest(".search_field_wrap") !== null || e.target.closest(".auto_word_layer") !== null) {
+        return;
+      }
+      auto_word_layer.forEach((element) => {
+        element.classList.remove("auto_mode");
+      });
+    });
+
+    window.addEventListener("resize", () => {
+      resizePos();
+    });
+
+
+    function autoLayerInit(target, layer, index) {
+      let thisElement = target;
+      let auto_word_layer = layer;
+
+      if (thisElement.getAttribute("id") === null) {
+        thisElement.setAttribute("id", 'search_item_' + index);
+        auto_word_layer.setAttribute("data-autoLayer", 'search_item_' + index);
+      } else {
+        auto_word_layer.setAttribute("data-autoLayer", thisElement.getAttribute("id"));
+      }
+      if (thisElement.closest(".popup_contentlow") !== null) {
+        thisElement.closest(".popup_contentlow").appendChild(auto_word_layer);
+      } else {
+        appBody.appendChild(auto_word_layer);
+      }
+    }
+
+    function autoLayerPos(target) {
+      const thisElement = target;
+      appendLayer = document.querySelector(`[data-autoLayer='${thisElement.getAttribute("id")}']`);
+      if (appendLayer === null) {
+        return;
+      }
+      if (thisElement.closest(".popup_contentlow") !== null) {
+        appendLayer.setAttribute("style", `
+                  top : ${(thisElement.getBoundingClientRect().top - thisElement.closest(".popup_contentlow").getBoundingClientRect().top) + thisElement.getBoundingClientRect().height - 1}px;
+                  left : ${thisElement.getBoundingClientRect().left - thisElement.closest(".popup_contentlow").getBoundingClientRect().left}px;
+                  width : ${thisElement.scrollWidth}px;
+              `)
+      } else {
+        appendLayer.setAttribute("style", `
+                  top : ${window.scrollY + thisElement.getBoundingClientRect().top + thisElement.getBoundingClientRect().height - 1}px;
+                  left : ${thisElement.getBoundingClientRect().left}px;
+                  width : ${thisElement.scrollWidth}px;
+              `)
+      }
+    }
+
+    function resizePos() {
+      searchFieldWrap.forEach((element, index) => {
+        autoLayerPos(element);
+      })
+    }
+  }
+
+  function valueCheck(target, parent) {
+    const thisElement = target;
+    const thisElementParent = parent;
+    if (appendLayer === null) {
+      return;
+    }
+    appendLayer = document.querySelector(`[data-autoLayer='${thisElementParent.getAttribute("id")}']`);
+    let auto_word_list_wrap = appendLayer.querySelector(".auto_word_list_wrap");
+    let autoLayerCountOption = thisElementParent.getAttribute("data-rowCount") !== undefined ? thisElementParent.getAttribute("data-rowCount") : 3;
+    if (thisElement.value.length) {
+      thisElementParent.classList.add("value_true");
+      appendLayer.classList.add("auto_mode");
+      if (!!appendLayer.querySelectorAll("li")[autoLayerCountOption]) {
+        auto_word_list_wrap.style.maxHeight = `${appendLayer.querySelectorAll("li")[autoLayerCountOption].offsetTop}px`;
+      }
+      appendLayer.classList.add("auto_scroll_show");
+    } else {
+      resetLayer(thisElementParent);
+    }
+  }
+
+  function resetLayer(parent) {
+    parent.classList.remove("value_true");
+    parent.classList.remove("typing");
+    if (!!appendLayer) {
+      appendLayer.classList.remove("auto_mode");
+      appendLayer.classList.remove("auto_scroll_show");
+    }
+  }
+}

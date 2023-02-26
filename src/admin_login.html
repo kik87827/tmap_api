@@ -5,7 +5,25 @@
 	<div class="page_wrap">
 		@@include('./include/_header2.html')
 		<section class="middle_wrap type2">
-			내용이 들어갑니다.
+			<div class="midform_inwrap">
+				<fieldset class="midform_field">
+					<legend>관리자 로그인</legend>
+					<div class="midform_title">관리자 <span class="primay_text_item">로그인</span></div>
+					<div class="midform_primary_row">
+						<div class="midform_input_group">
+							<div class="midform_input_row"><input type="text" class="midform_input" placeholder="아이디를 입력해주세요."></div>
+							<div class="midform_input_row"><input type="password" class="midform_input" placeholder="비밀번호를 입력해주세요."></div>
+						</div>
+						<div class="midform_else_row">
+							<div class="props_form_item">
+								<input type="checkbox" class="props_form" id="idsave">
+								<label for="idsave" class="props_label">아이디 저장</label>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+				<div class="midform_submit_row"><a href="#" class="btn_midform_submit"><span class="btn_submit_text">로그인</span></a></div>
+			</div>
 		</section>
 		@@include('./include/_footer2.html')
 	</div>

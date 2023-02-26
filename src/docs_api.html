@@ -20,12 +20,1807 @@
 						<h2 class="middle_right_title">대중교통 API</h2>
 						<p class="middle_right_title_copy">출발지/목적지에 대한 대중교통 경로탐색 정보와 전체 보행자 이동 경로를 제공합니다.</p>
 					</div>
-					<div class="middle_right_content_row">
-						내용이 들어갑니다.
+					<div class="middle_right_content_row type2">
+						<div class="guide_copybox">
+							<p class="copybox_para">해당 API를 사용하기 위해서는 앱 키 값이 반드시 필요합니다. <br><a href="#" class="primay_text_item">Guide</a> 페이지를 참고하세요.</p>
+						</div>
+						<div class="vertical_item_wrap">
+							<div class="vertical_item">
+								<div class="vitem_title_row"><p class="vitem_title">API URL</p></div>
+								<div class="vitem_content_row">
+									<div class="code_item">
+										<!-- code -->
+										<div style="background-color: #202123;padding: 16px;border-radius: 8px;color:#fff;">
+											code sample
+										</div>
+										<!-- // code -->
+									</div>
+								</div>
+							</div>
+							<div class="vertical_item">
+								<div class="vitem_title_row"><p class="vitem_title">Basic Information</p></div>
+								<div class="vitem_content_row">
+									<div class="swiper-container swiper-drag-wrap">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="data_table_wrap">
+													<table class="data_table basic_table">
+														<thead>
+															<tr>
+																<th scope="col" class="fix_cols"><span class="data_thtext">Name</span></th>
+																<th scope="col" class="long_cols"><span class="data_thtext">Description</span></th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td class="fix_cols"><p class="data_tdlabel">Protocol /HTTP Method</p></td>
+																<td class="long_cols"><p class="data_tdtext">Post Method</p></td>
+															</tr>
+															<tr>
+																<td class="fix_cols"><p class="data_tdlabel">Version</p></td>
+																<td class="long_cols"><p class="data_tdtext">1</p></td>
+															</tr>
+															<tr>
+																<td class="fix_cols"><p class="data_tdlabel">Pre-Conditions</p></td>
+																<td class="long_cols">
+																	<ul class="indent_item_list data_tdtext">
+																		<li>
+																			<div class="indent_item">
+																				<span class="indent_bullet">1)</span>
+																				<div class="indent_content">
+																					<p class="indent_cpara">The Accept value of RequestHeader supports the following values.</p>
+																					<ul class="dash_text_list">
+																						<li>application / json : Data response in json format. (Default)</li>
+																						<li>application / xml : Data response in xml format.</li>
+																					</ul>
+																				</div>
+																			</div>
+																		</li>
+																	</ul>
+																</td>
+															</tr>
+															<tr>
+																<td class="fix_cols"><p class="data_tdlabel">OAuth</p></td>
+																<td class="long_cols"><p class="data_tdtext">NO</p></td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-scrollbar"></div>
+									</div>
+								</div>
+							</div>
+							<div class="vertical_item">
+								<div class="vitem_title_row"><p class="vitem_title">Request</p></div>
+								<div class="vitem_content_row">
+									<div class="vitem_depitem">
+										<p class="vitem_dep_title">Parameters</p>
+										<div class="vitem_dep_content">
+											<div class="swiper-container swiper-drag-wrap">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<div class="data_table_wrap">
+															<table class="data_table request_parameters_table">
+																<thead>
+																	<tr>
+																		<th scope="col" class="auto_cols wid_01"><span class="data_thtext">Name</span></th>
+																		<th scope="col" class="auto_cols wid_02"><span class="data_thtext">Data Type</span></th>
+																		<th scope="col" class="auto_cols wid_03"><span class="data_thtext">Mandatory</span></th>
+																		<th scope="col" class="auto_cols wid_04"><span class="data_thtext">Example</span></th>
+																		<th scope="col" class="auto_cols wid_05"><span class="data_thtext">Default</span></th>
+																		<th scope="col" class="long_cols"><span class="data_thtext">Description</span></th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">startX</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">String</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">Y</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">126.9264931</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">
+																				<p class="data_tdpara">출발지 좌표(경도)</p>
+																				<ul class="dash_text_list">
+																					<li>WGS84</li>
+																				</ul>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">startY</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">String</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">Y</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">37.61344364</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">
+																				<p class="data_tdpara">출발지 좌표(위도)</p>
+																				<ul class="dash_text_list">
+																					<li>WGS84</li>
+																				</ul>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">endX</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">String</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">Y</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">127.1269368</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">
+																				<p class="data_tdpara">도착지 좌표(경도)</p>
+																				<ul class="dash_text_list">
+																					<li>WGS84</li>
+																				</ul>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">endY</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">String</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">Y</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">37.50041988</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">
+																				<p class="data_tdpara">도착지 좌표(위도)</p>
+																				<ul class="dash_text_list">
+																					<li>WGS84</li>
+																				</ul>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">lang</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">int</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">N</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><p class="data_tdtext">0</p></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">
+																				<p class="data_tdpara">언어 선택</p>
+																				<ul class="dash_text_list">
+																					<li>국문 : 0</li>
+																					<li>영문 : 1</li>
+																				</ul>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">format</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">String</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">N</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><p class="data_tdtext">json</p></td>
+																		<td class="long_cols"><div class="data_tdtext">출력포맷(json, xml)</div></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">count</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">int</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">N</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><p class="data_tdtext">10</p></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">
+																				<p class="data_tdpara">최대 응답 결과 개수</p>
+																				<ul class="dash_text_list">
+																					<li>1 ~ 10</li>
+																					<li>기본값 10</li>
+																				</ul>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">searchDttm</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">String</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">N</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">202301011200</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext_g">
+																				<div class="data_tdtext">
+																					<p class="data_tdpara">타임머신 기능 검색 날짜</p>
+																					<ul class="dash_text_list">
+																						<li>yyyymmddhhmi</li>
+																					</ul>
+																				</div>
+																				<div class="data_tdtext">
+																					<p class="data_tdpara">타임머신 요청 시간 범위</p>
+																					<ul class="dash_text_list">
+																						<li>년 (4자리) = 0000 ~ 9999</li>
+																						<li>월 (2자리) = 01 ~ 12</li>
+																						<li>일 (2자리) = 01 ~ 31</li>
+																						<li>시 (2자리) = 00 ~ 23</li>
+																						<li>분 (2자리) = 00 ~ 59</li>
+																					</ul>
+																				</div>
+																			</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-scrollbar"></div>
+											</div>
+										</div>
+									</div>
+									<div class="vitem_depitem">
+										<p class="vitem_dep_title">Request Sample - Code type : application/json</p>
+										<div class="vitem_dep_content">
+											<div class="code_item">
+												<!-- code -->
+												<div style="background-color: #202123;padding: 16px;border-radius: 8px;color:#fff;">
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample
+												</div>
+												<!-- // code -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="vertical_item">
+								<div class="vitem_title_row"><p class="vitem_title">Response</p></div>
+								<div class="vitem_content_row">
+									<div class="vitem_depitem">
+										<p class="vitem_dep_title">Parameters</p>
+										<div class="vitem_dep_content">
+											<div class="swiper-container swiper-drag-wrap">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<div class="data_table_wrap has_depbar_wrap">
+															<table class="data_table response_parameters_table">
+																<thead>
+																	<tr>
+																		<th scope="col" class="auto_cols wid_01"><span class="data_thtext">Name</span></th>
+																		<th scope="col" class="auto_cols wid_02"><span class="data_thtext">Data Type</span></th>
+																		<th scope="col" class="auto_cols wid_03"><span class="data_thtext">Mandatory</span></th>
+																		<th scope="col" class="auto_cols wid_04"><span class="data_thtext">Example</span></th>
+																		<th scope="col" class="long_cols"><span class="data_thtext">Description</span></th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">metaData</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">node</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">plan</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">node</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins1">
+																				<span class="depbar pos1"></span>
+																				<p class="data_tdlabel">itineraries</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">node</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><p class="data_tdtext">데이터 상세정보 최상위 노드</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins2">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<p class="data_tdlabel">totalTime</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">int</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><p class="data_tdtext">총 소요시간(sec)</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins2">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<p class="data_tdlabel">transferCount</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">int</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><p class="data_tdtext">환승횟수</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins2">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<p class="data_tdlabel">walkDistance</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">double</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><p class="data_tdtext">총 보행자 이동 거리(m)</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins2">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<p class="data_tdlabel">totalDistance</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">double</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><p class="data_tdtext">총 이동거리(m)</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins2">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<p class="data_tdlabel">walkTime</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">int</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><p class="data_tdtext">총 보행자 소요시간(sec)</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins2">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<p class="data_tdlabel">fare</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">node</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><p class="data_tdtext">금액 최상위 노드</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins3">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<p class="data_tdlabel">regular</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">node</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><p class="data_tdtext">금액 상위 노드</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins4">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<span class="depbar pos4"></span>
+																				<p class="data_tdlabel">currency</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">node</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><p class="data_tdtext">금액 상위 노드</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins5">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<span class="depbar pos4"></span>
+																				<span class="depbar pos5"></span>
+																				<p class="data_tdlabel">symbol</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">string</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><p class="data_tdtext">금액 상징(￦)</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins5">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<span class="depbar pos4"></span>
+																				<span class="depbar pos5"></span>
+																				<p class="data_tdlabel">currency</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">string</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><p class="data_tdtext">금액 단위(원)</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins5">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<span class="depbar pos4"></span>
+																				<span class="depbar pos5 htype2"></span>
+																				<p class="data_tdlabel">currencyCode</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">string</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><p class="data_tdtext">금액 단위 코드(KRW)</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins4">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3 htype2"></span>
+																				<span class="depbar pos4 htype2"></span>
+																				<p class="data_tdlabel">totalFare</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">number</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><p class="data_tdtext">대중교통요금</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins2 pos2">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<p class="data_tdlabel">legs</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">node</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><p class="data_tdtext">대중교통 정보 최상위 노드</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins3">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<p class="data_tdlabel">distance</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">double</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><p class="data_tdtext">구간별 이동거리(m)</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins3">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<p class="data_tdlabel">sectionTime</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">int</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><p class="data_tdtext">구간별 소요시간(sec)</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins3">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<p class="data_tdlabel">mode</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">string</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">
+																				<p class="data_tdpara">이동 수단 종류</p>
+																				<ul class="indent_item_list">
+																					<li>
+																						<div class="indent_item">
+																							<span class="indent_bullet">1.</span>
+																							<div class="indent_content">
+																								<p class="indent_cpara">도보 - WALK</p>
+																							</div>
+																						</div>
+																					</li>
+																					<li>
+																						<div class="indent_item">
+																							<span class="indent_bullet">2.</span>
+																							<div class="indent_content">
+																								<p class="indent_cpara">버스 - BUS</p>
+																							</div>
+																						</div>
+																					</li>
+																					<li>
+																						<div class="indent_item">
+																							<span class="indent_bullet">3.</span>
+																							<div class="indent_content">
+																								<p class="indent_cpara">지하철 - SUBWAY</p>
+																							</div>
+																						</div>
+																					</li>
+																					<li>
+																						<div class="indent_item">
+																							<span class="indent_bullet">4.</span>
+																							<div class="indent_content">
+																								<p class="indent_cpara">고속/시외버스 - EXPRESSBUS</p>
+																							</div>
+																						</div>
+																					</li>
+																					<li>
+																						<div class="indent_item">
+																							<span class="indent_bullet">5.</span>
+																							<div class="indent_content">
+																								<p class="indent_cpara">기차 - TRAIN</p>
+																							</div>
+																						</div>
+																					</li>
+																					<li>
+																						<div class="indent_item">
+																							<span class="indent_bullet">6.</span>
+																							<div class="indent_content">
+																								<p class="indent_cpara">항공 - AIRPLANE</p>
+																							</div>
+																						</div>
+																					</li>
+																					<li>
+																						<div class="indent_item">
+																							<span class="indent_bullet">7.</span>
+																							<div class="indent_content">
+																								<p class="indent_cpara">해운 - FERRY</p>
+																							</div>
+																						</div>
+																					</li>
+																				</ul>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins3">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<p class="data_tdlabel">route</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">string</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><p class="data_tdtext">대중교통 노선 명칭</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins3">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<p class="data_tdlabel">routeColor</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">string</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><p class="data_tdtext">대중교통 노선 색상</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins3">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<p class="data_tdlabel">routeId</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">string</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><p class="data_tdtext">대중교통 노선 ID</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins3">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<p class="data_tdlabel">start</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">node</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><p class="data_tdtext">구간별 출발정보 최상위 노드</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins4">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<span class="depbar pos4"></span>
+																				<p class="data_tdlabel">lat</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">number</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">
+																				<p class="data_tdpara">출발지 좌표(위도)</p>
+																				<ul class="dash_text_list">
+																					<li>WGS84</li>
+																				</ul>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins4">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<span class="depbar pos4"></span>
+																				<p class="data_tdlabel">lon</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">number</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">
+																				<p class="data_tdpara">출발지 좌표(경도)</p>
+																				<ul class="dash_text_list">
+																					<li>WGS84</li>
+																				</ul>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins4">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<span class="depbar pos4 htype2"></span>
+																				<p class="data_tdlabel">name</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">string</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">출발 정류장 명칭</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins3">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<p class="data_tdlabel">end</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">node</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><p class="data_tdtext">구간별 도착정보 최상위 노드</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins4">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<span class="depbar pos4"></span>
+																				<p class="data_tdlabel">lat</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">number</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">
+																				<p class="data_tdpara">도착 좌표(위도)</p>
+																				<ul class="dash_text_list">
+																					<li>WGS84</li>
+																				</ul>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins4">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<span class="depbar pos4"></span>
+																				<p class="data_tdlabel">lon</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">number</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">
+																				<p class="data_tdpara">도착 좌표(경도)</p>
+																				<ul class="dash_text_list">
+																					<li>WGS84</li>
+																				</ul>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins4">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<span class="depbar pos4 htype2"></span>
+																				<p class="data_tdlabel">name</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">string</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">도착 정류장 명칭</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins3">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<p class="data_tdlabel">steps</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">node</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><p class="data_tdtext">구간별 도보상세정보 최상위 노드</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins4">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<span class="depbar pos4"></span>
+																				<p class="data_tdlabel">distance</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">double</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">도보 이동거리(m)</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins4">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<span class="depbar pos4"></span>
+																				<p class="data_tdlabel">streetName</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">string</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">도로명</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins4">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<span class="depbar pos4"></span>
+																				<p class="data_tdlabel">description</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">string</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">도보 구간 정보</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins4">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<span class="depbar pos4 htype2"></span>
+																				<p class="data_tdlabel">linestring</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">string</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">
+																				<p class="data_tdpara">도보 구간 좌표</p>
+																				<ul class="dash_text_list">
+																					<li>WGS84</li>
+																				</ul>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins3">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<p class="data_tdlabel">passShape</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">node</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><p class="data_tdtext">대중교통 구간 좌표 최상위 노드</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins4">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<span class="depbar pos4 htype2"></span>
+																				<p class="data_tdlabel">linestring</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">string</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">
+																				<p class="data_tdpara">대중교통 구간 좌표</p>
+																				<ul class="dash_text_list">
+																					<li>WGS84</li>
+																				</ul>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins3">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<p class="data_tdlabel">passStopList</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">node</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><p class="data_tdtext">대중교통 구간 정류장 정보 최상위 노드</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins4">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<span class="depbar pos4"></span>
+																				<p class="data_tdlabel">stations</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">node</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">정류장 상세정보</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins5">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<span class="depbar pos4"></span>
+																				<span class="depbar pos5"></span>
+																				<p class="data_tdlabel">index</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">number</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">순번</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins5">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<span class="depbar pos4"></span>
+																				<span class="depbar pos5"></span>
+																				<p class="data_tdlabel">stationID</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">string</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">정류장 ID</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins5">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<span class="depbar pos4"></span>
+																				<span class="depbar pos5"></span>
+																				<p class="data_tdlabel">stationName</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">string</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">정류장 명칭</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins5">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<span class="depbar pos4"></span>
+																				<span class="depbar pos5"></span>
+																				<p class="data_tdlabel">lon</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">string</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">
+																				<p class="data_tdpara">정류장 좌표(경도)</p>
+																				<ul class="dash_text_list">
+																					<li>WGS84</li>
+																				</ul>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins5">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3"></span>
+																				<span class="depbar pos4 htype2"></span>
+																				<span class="depbar pos5 htype2"></span>
+																				<p class="data_tdlabel">lat</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">string</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">
+																				<p class="data_tdpara">정류장 좌표(위도)</p>
+																				<ul class="dash_text_list">
+																					<li>WGS84</li>
+																				</ul>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins3">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<span class="depbar pos3 htype2"></span>
+																				<p class="data_tdlabel">type</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">int</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">
+																				<p class="data_tdpara">이동수단별 노선코드</p>
+																				<ul class="dash_text_list">
+																					<li>6.이동수단 코드sheet 참조</li>
+																				</ul>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins2">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2 htype2"></span>
+																				<p class="data_tdlabel">pathType</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">int</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<p class="data_tdtext">
+																				경로 탐색 결과 종류<br>
+																				1-지하철, 2-버스, 3-버스+지하철<br>
+																				4-고속/시외버스, 5-기차, 6-항공, 7-해운
+																			</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins1">
+																				<span class="depbar"></span>
+																				<p class="data_tdlabel">requestParameters</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">node</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins2">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<p class="data_tdlabel">reqDttm</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">string</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">
+																				<p class="data_tdpara">요청 시각</p>
+																				<ul class="dash_text_list">
+																					<li>yyyymmddhhmiss</li>
+																				</ul>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins2">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<p class="data_tdlabel">startX</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">string</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">
+																				<p class="data_tdpara">출발지 좌표(경도)</p>
+																				<ul class="dash_text_list">
+																					<li>WGS84</li>
+																				</ul>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins2">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<p class="data_tdlabel">startY</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">string</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">
+																				<p class="data_tdpara">출발지 좌표(위도)</p>
+																				<ul class="dash_text_list">
+																					<li>WGS84</li>
+																				</ul>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins2">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<p class="data_tdlabel">locale</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">string</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">
+																				<p class="data_tdpara">언어코드</p>
+																				<ul class="dash_text_list">
+																					<li>ko</li>
+																					<li>en</li>
+																				</ul>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins2">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<p class="data_tdlabel">endX</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">string</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">
+																				<p class="data_tdpara">도착지 좌표(경도)</p>
+																				<ul class="dash_text_list">
+																					<li>WGS84</li>
+																				</ul>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins2">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<p class="data_tdlabel">endY</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">string</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<div class="data_tdtext">
+																				<p class="data_tdpara">도착지 좌표(위도)</p>
+																				<ul class="dash_text_list">
+																					<li>WGS84</li>
+																				</ul>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins2">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<p class="data_tdlabel">busCount</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">int</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<p class="data_tdtext">버스 결과 개수</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins2">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<p class="data_tdlabel">subwayCount</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">int</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<p class="data_tdtext">지하철 결과 개수</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins2">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<p class="data_tdlabel">subwayBusCount</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">int</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<p class="data_tdtext">버스+지하철 결과 개수</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins2">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<p class="data_tdlabel">expressbusCount</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">int</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<p class="data_tdtext">고속/시외 버스 결과 개수</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins2">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<p class="data_tdlabel">trainCount</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">int</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<p class="data_tdtext">기차 결과 개수</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins2">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<p class="data_tdlabel">airportCount</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">int</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<p class="data_tdtext">항공 결과 개수</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins2">
+																				<span class="depbar pos1"></span>
+																				<span class="depbar pos2"></span>
+																				<p class="data_tdlabel">ferryCount</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">int</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<p class="data_tdtext">해운 결과 개수</p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols has_bar">
+																			<div class="data_tdlabel has_dep ins2">
+																				<span class="depbar pos1 htype2"></span>
+																				<span class="depbar pos2 htype2"></span>
+																				<p class="data_tdlabel">wideareaRouteCount</p>
+																			</div>
+																		</td>
+																		<td class="auto_cols"><p class="data_tdtext">int</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols">
+																			<p class="data_tdtext">광역 노선 결과 개수</p>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-scrollbar"></div>
+											</div>
+											
+										</div>
+									</div>
+									<div class="vitem_depitem">
+										<p class="vitem_dep_title">Response Sample - Code type : application/json</p>
+										<div class="vitem_dep_content">
+											<div class="code_item">
+												<!-- code -->
+												<div style="background-color: #202123;padding: 16px;border-radius: 8px;color:#fff;">
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample
+												</div>
+												<!-- // code -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="vertical_item">
+								<div class="vitem_title_row"><p class="vitem_title">Error code index</p></div>
+								<div class="vitem_content_row">
+									<div class="swiper-container swiper-drag-wrap">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="data_table_wrap">
+													<table class="data_table error_table">
+														<thead>
+															<tr>
+																<th scope="col" class="auto_cols wid_01"><span class="data_thtext">Error Code</span></th>
+																<th scope="col" class="auto_cols wid_02"><span class="data_thtext">Message</span></th>
+																<th scope="col" class="auto_cols wid_03"><span class="data_thtext">HTTP Status Code</span></th>
+																<th scope="col" class="long_cols"><span class="data_thtext">Description</span></th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td class="auto_cols"><p class="data_tdlabel">11</p></td>
+																<td class="auto_cols"><p class="data_tdtext">출발지/도착지 간 거리가 가까움</p></td>
+																<td class="auto_cols"><p class="data_tdtext">200</p></td>
+																<td class="long_cols"><p class="data_tdtext">출발지/도착지 간 거리가 가까워서서 탐색된 경로 없음</p></td>
+															</tr>
+															<tr>
+																<td class="auto_cols"><p class="data_tdlabel">12</p></td>
+																<td class="auto_cols"><p class="data_tdtext">출발지 정류장 매핑 실패</p></td>
+																<td class="auto_cols"><p class="data_tdtext">200</p></td>
+																<td class="long_cols"><p class="data_tdtext">출발지에서 검색된 정류장 없어서 탐색된 경로 없음</p></td>
+															</tr>
+															<tr>
+																<td class="auto_cols"><p class="data_tdlabel">13</p></td>
+																<td class="auto_cols"><p class="data_tdtext">도착지 정류장 매핑 실패</p></td>
+																<td class="auto_cols"><p class="data_tdtext">200</p></td>
+																<td class="long_cols"><p class="data_tdtext">도착지에서 검색된 정류장 없어서 탐색된 경로 없음</p></td>
+															</tr>
+															<tr>
+																<td class="auto_cols"><p class="data_tdlabel">14</p></td>
+																<td class="auto_cols"><p class="data_tdtext">기타</p></td>
+																<td class="auto_cols"><p class="data_tdtext">200</p></td>
+																<td class="long_cols"><p class="data_tdtext">출발지/도착지 간 탐색된 대중교통경로가 없음</p></td>
+															</tr>
+															<tr>
+																<td class="auto_cols"><p class="data_tdlabel">21</p></td>
+																<td class="auto_cols"><p class="data_tdtext">필수 입력 값 형식 및 범위 오류</p></td>
+																<td class="auto_cols"><p class="data_tdtext">400</p></td>
+																<td class="long_cols"><span class="hdtext">내용이 없습니다.</span></td>
+															</tr>
+															<tr>
+																<td class="auto_cols"><p class="data_tdlabel">22</p></td>
+																<td class="auto_cols"><p class="data_tdtext">필수 입력 값 누락 오류</p></td>
+																<td class="auto_cols"><p class="data_tdtext">400</p></td>
+																<td class="long_cols"><span class="hdtext">내용이 없습니다.</span></td>
+															</tr>
+															<tr>
+																<td class="auto_cols"><p class="data_tdlabel">23</p></td>
+																<td class="auto_cols"><p class="data_tdtext">서비스 지역 아님</p></td>
+																<td class="auto_cols"><p class="data_tdtext">400</p></td>
+																<td class="long_cols"><span class="hdtext">내용이 없습니다.</span></td>
+															</tr>
+															<tr>
+																<td class="auto_cols"><p class="data_tdlabel">24</p></td>
+																<td class="auto_cols"><p class="data_tdtext">타임머신 시각 오류</p></td>
+																<td class="auto_cols"><p class="data_tdtext">400</p></td>
+																<td class="long_cols"><p class="data_tdtext">타임머신 시각 입력 오류</p></td>
+															</tr>
+															<tr>
+																<td class="auto_cols"><p class="data_tdlabel">31</p></td>
+																<td class="auto_cols"><p class="data_tdtext">일정 시간 응답이 없는 경우</p></td>
+																<td class="auto_cols"><p class="data_tdtext">500</p></td>
+																<td class="long_cols"><span class="hdtext">내용이 없습니다.</span></td>
+															</tr>
+															<tr>
+																<td class="auto_cols"><p class="data_tdlabel">32</p></td>
+																<td class="auto_cols"><p class="data_tdtext">기타 오류</p></td>
+																<td class="auto_cols"><p class="data_tdtext">500</p></td>
+																<td class="long_cols"><span class="hdtext">내용이 없습니다.</span></td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-scrollbar"></div>
+									</div>
+									
+								</div>
+							</div>
+							<div class="vertical_item">
+								<div class="vitem_title_row"><p class="vitem_title">이동수단 노선 코드</p></div>
+								<div class="vitem_content_row">
+									<div class="vitem_depitem">
+										<p class="vitem_dep_title">지하철</p>
+										<div class="vitem_dep_content">
+											<div class="swiper-container swiper-drag-wrap">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<div class="data_table_wrap">
+															<table class="data_table trans_table">
+																<thead>
+																	<tr>
+																		<th scope="col" class="auto_cols wid_01"><span class="data_thtext">Type</span></th>
+																		<th scope="col" class="auto_cols wid_02"><span class="data_thtext">노선명</span></th>
+																		<th scope="col" class="auto_cols wid_03"><span class="data_thtext">Type</span></th>
+																		<th scope="col" class="long_cols"><span class="data_thtext">노선명</span></th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">1</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">1호선</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">117</p></td>
+																		<td class="long_cols"><p class="data_tdtext">1호선(급행)</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">2</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">2호선</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">118</p></td>
+																		<td class="long_cols"><p class="data_tdtext">1호선(특급)</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">3</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">3호선</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">119</p></td>
+																		<td class="long_cols"><p class="data_tdtext">4호선(급행)</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">4</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">4호선</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">120</p></td>
+																		<td class="long_cols"><p class="data_tdtext">9호선(급행)</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">3</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">3호선</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">121</p></td>
+																		<td class="long_cols"><p class="data_tdtext">수인분당선(급행)</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">4</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">4호선</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">122</p></td>
+																		<td class="long_cols"><p class="data_tdtext">경의중앙선(급행)</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">5</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">5호선</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">123</p></td>
+																		<td class="long_cols"><p class="data_tdtext">경춘선(급행)</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">6</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">6호선</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">21</p></td>
+																		<td class="long_cols"><p class="data_tdtext">인천1호선</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">7</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">7호선</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">22</p></td>
+																		<td class="long_cols"><p class="data_tdtext">인천2호선</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">8</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">8호선</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">23 ~ 30</p></td>
+																		<td class="long_cols"><p class="data_tdtext">reserve</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">9</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">9호선</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">31</p></td>
+																		<td class="long_cols"><p class="data_tdtext">대전1호선</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">10~20</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">reserve</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">32 ~ 40</p></td>
+																		<td class="long_cols"><p class="data_tdtext">reserve</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">100</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">수인분당선</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">41</p></td>
+																		<td class="long_cols"><p class="data_tdtext">대구1호선</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">101</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">공항철도</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">42</p></td>
+																		<td class="long_cols"><p class="data_tdtext">대구2호선</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">104</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">경의중앙선</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">43</p></td>
+																		<td class="long_cols"><p class="data_tdtext">대구3호선</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">107</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">에버라인</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">44 ~ 50</p></td>
+																		<td class="long_cols"><p class="data_tdtext">reserve</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">108</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">경춘선</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">51</p></td>
+																		<td class="long_cols"><p class="data_tdtext">광주1호선</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">109</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">신분당선</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">52 ~ 60</p></td>
+																		<td class="long_cols"><p class="data_tdtext">reserve</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">110</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">의정부경전철</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">71</p></td>
+																		<td class="long_cols"><p class="data_tdtext">부산1호선</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">112</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">경강선</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">72</p></td>
+																		<td class="long_cols"><p class="data_tdtext">부산2호선</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">113</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">우이신설선</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">73</p></td>
+																		<td class="long_cols"><p class="data_tdtext">부산3호선</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">114</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">서해선</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">74</p></td>
+																		<td class="long_cols"><p class="data_tdtext">부산4호선</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">115</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">김포골드라인</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">78</p></td>
+																		<td class="long_cols"><p class="data_tdtext">동해선</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">116</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">신림선</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">79</p></td>
+																		<td class="long_cols"><p class="data_tdtext">부산김해경전철</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">124 ~ 65535</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">reserve</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-scrollbar"></div>
+											</div>
+										</div>
+									</div>
+									<div class="vitem_depitem">
+										<p class="vitem_dep_title">버스</p>
+										<div class="vitem_dep_content">
+											<div class="swiper-container swiper-drag-wrap">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<div class="data_table_wrap">
+															<table class="data_table trans_table">
+																<thead>
+																	<tr>
+																		<th scope="col" class="auto_cols wid_01"><span class="data_thtext">Type</span></th>
+																		<th scope="col" class="auto_cols wid_02"><span class="data_thtext">노선명</span></th>
+																		<th scope="col" class="auto_cols wid_03"><span class="data_thtext">Type</span></th>
+																		<th scope="col" class="long_cols"><span class="data_thtext">노선명</span></th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">1</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">일반</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">13</p></td>
+																		<td class="long_cols"><p class="data_tdtext">순환</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">2</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">좌석</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">14</p></td>
+																		<td class="long_cols"><p class="data_tdtext">광역</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">3</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">마을</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">15</p></td>
+																		<td class="long_cols"><p class="data_tdtext">급행</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">4</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">직행좌석</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">16</p></td>
+																		<td class="long_cols"><p class="data_tdtext">급행간선</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">5</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">공항</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">17</p></td>
+																		<td class="long_cols"><p class="data_tdtext">reserve</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">6</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">간선급행</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">18</p></td>
+																		<td class="long_cols"><p class="data_tdtext">reserve</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">7</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">reserve</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">19</p></td>
+																		<td class="long_cols"><p class="data_tdtext">reserve</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">8</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">reserve</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">20</p></td>
+																		<td class="long_cols"><p class="data_tdtext">reserve</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">9</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">reserve</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">21</p></td>
+																		<td class="long_cols"><p class="data_tdtext">농어촌</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">10</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">외곽</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">22</p></td>
+																		<td class="long_cols"><p class="data_tdtext">시외버스</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">11</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">간선</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">23</p></td>
+																		<td class="long_cols"><p class="data_tdtext">고속버스</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">12</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">지선</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">24</p></td>
+																		<td class="long_cols"><p class="data_tdtext">reserve</p></td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-scrollbar"></div>
+											</div>
+										</div>
+									</div>
+									<div class="vitem_depitem">
+										<p class="vitem_dep_title">기차</p>
+										<div class="vitem_dep_content">
+											<div class="swiper-container swiper-drag-wrap">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<div class="data_table_wrap">
+															<table class="data_table trans_table">
+																<thead>
+																	<tr>
+																		<th scope="col" class="auto_cols wid_01"><span class="data_thtext">Type</span></th>
+																		<th scope="col" class="auto_cols wid_02"><span class="data_thtext">노선명</span></th>
+																		<th scope="col" class="auto_cols wid_03"><span class="data_thtext">Type</span></th>
+																		<th scope="col" class="long_cols"><span class="data_thtext">노선명</span></th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">1</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">KTX</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">13</p></td>
+																		<td class="long_cols"><p class="data_tdtext">새마을</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">2</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">KTX산천</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">14</p></td>
+																		<td class="long_cols"><p class="data_tdtext">누리로</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">3</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">KTX이음</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">15</p></td>
+																		<td class="long_cols"><p class="data_tdtext">ITX새마을</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">4 ~ 10</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">reserve</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">16</p></td>
+																		<td class="long_cols"><p class="data_tdtext">ITX청춘</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">11</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">SRT</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">17 ~ 65535</p></td>
+																		<td class="long_cols"><p class="data_tdtext">reserve</p></td>
+																	</tr>
+																	<tr>
+																		<td class="auto_cols"><p class="data_tdlabel">12</p></td>
+																		<td class="auto_cols"><p class="data_tdtext">무궁화</p></td>
+																		<td class="auto_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																		<td class="long_cols"><span class="hdtext">내용이 없습니다.</span></td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-scrollbar"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+		<script>
+			window.addEventListener("load",()=>{
+				swiperTable();
+			});
+		</script>
 		@@include('./include/_footer.html')
 	</div>
 </body>

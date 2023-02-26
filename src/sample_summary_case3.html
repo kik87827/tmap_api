@@ -24,43 +24,8 @@
 						<div class="apiform_wrap">
 							<div class="apiform_field">
 								<div class="form_box">
-									<!--  -->
-									<div class="form_row search_field_wrap" name="search_form" data-rowCount="3" id="search_form">
-										<div class="form_input_item search_field" data-name="value_check">
-											<input type="text" class="form_input" placeholder="출발지 좌표를 입력해주세요." value="37.637885394207, 127.025509108604">
-										</div>
-										<!-- layer -->
-										<div class="auto_word_layer">
-											<div class="auto_word_list_wrap">
-												<ul class="auto_word_list">
-													<li><a href="javascript:;" class="auto_word_item">티스테이션</a></li>
-													<li><a href="javascript:;" class="auto_word_item">티맵모빌리티</a></li>
-													<li><a href="javascript:;" class="auto_word_item">티파니</a></li>
-												</ul>
-											</div>
-										</div>
-										<!-- // layer -->
-									</div>
-									<!-- // -->
-									<!--  -->
-									<div class="form_row search_field_wrap" name="search_form" data-rowCount="3" id="search_form2">
-										<div class="form_input_item search_field" data-name="value_check">
-											<input type="text" class="form_input" placeholder="도착지 좌표를 입력해주세요." value="37.609094989686, 127.030406594109">
-										</div>
-										<!-- layer -->
-										<div class="auto_word_layer">
-											<div class="auto_word_list_wrap">
-												<ul class="auto_word_list">
-													<li><a href="javascript:;" class="auto_word_item">티스테이션</a></li>
-													<li><a href="javascript:;" class="auto_word_item">티맵모빌리티</a></li>
-													<li><a href="javascript:;" class="auto_word_item">티파니</a></li>
-													<li><a href="javascript:;" class="auto_word_item">티스테이션</a></li>
-												</ul>
-											</div>
-										</div>
-										<!-- // layer -->
-									</div>
-									<!-- // -->
+									<div class="form_row"><input type="text" class="form_input" value="37.637885394207, 127.025509108604" placeholder="출발지 좌표를 입력해주세요."></div>
+									<div class="form_row"><input type="text" class="form_input" value="37.609094989686, 127.030406594109" placeholder="도착지 좌표를 입력해주세요."></div>
 									<div class="form_row control_row">
 										<div class="control_cols">
 											<a href="#" class="btn_textitem ico_refresh"><span class="textitem_in">다시입력</span></a>
@@ -71,7 +36,7 @@
 									</div>
 								</div>
 								<div class="api_getdata_zone">
-									<div class="api_sort_row respon_type2">
+									<div class="api_sort_row">
 										<div class="sort_fix_cols">
 											<div class="combo_item" id="select_combo">
 												<a href="javascript:;" class="combo_target">지금 출발</a>
@@ -86,12 +51,51 @@
 											</div>
 										</div>
 										<div class="sort_long_cols">
+											<input type="text" class="form_input input_calendar" placeholder="0000-00-00 00:00">
 											<a href="javascript:;" class="btn_sort_submit"><span class="hdtext">검색</span></a>
 										</div>
 									</div>
 									<div class="api_getdata_row">
 										<ul class="api_getdata_list">
-											
+											<li>
+												<a href="#" class="api_getdata_item active">
+													<div class="getdata_main">1시간 44분</div>
+													<div class="getdata_sub_g">
+														<ul class="datasub_list">
+															<li><span class="datasub">도보 26분</span></li>
+															<li><span class="datasub">환승 1회</span></li>
+															<li><span class="datasub">요금 3,200원</span></li>
+															<li><span class="datasub">46.2km</span></li>
+														</ul>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="api_getdata_item">
+													<div class="getdata_main">1시간 44분</div>
+													<div class="getdata_sub_g">
+														<ul class="datasub_list">
+															<li><span class="datasub">도보 26분</span></li>
+															<li><span class="datasub">환승 1회</span></li>
+															<li><span class="datasub">요금 3,200원</span></li>
+															<li><span class="datasub">46.2km</span></li>
+														</ul>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="api_getdata_item">
+													<div class="getdata_main">1시간 44분</div>
+													<div class="getdata_sub_g">
+														<ul class="datasub_list">
+															<li><span class="datasub">도보 26분</span></li>
+															<li><span class="datasub">환승 1회</span></li>
+															<li><span class="datasub">요금 3,200원</span></li>
+															<li><span class="datasub">46.2km</span></li>
+														</ul>
+													</div>
+												</a>
+											</li>
 										</ul>
 									</div>
 								</div>
@@ -137,6 +141,10 @@
 									<div class="vitem_depitem">
 										<div class="vitem_dep_title_row">
 											<p class="vitem_dep_title">Response</p>
+											<div class="code_title_item">
+												<span class="code_mark" style="background-color:#09ec28;"></span>
+												<p class="code_title">200</p>
+											</div>
 										</div>
 										<div class="vitem_dep_content">
 											<div class="code_item">

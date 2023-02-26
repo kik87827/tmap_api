@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="./assets/css/common.css" />
 	<script src="./assets/js/jquery-3.4.1.min.js"></script>
 	<script src="./assets/js/dynamicListener.min.js"></script>
+	<script src="./assets/js/jquery.datetimepicker.full.min.js"></script>
 	<script src="./assets/js/swiper.min.js"></script>
 	<script src="./assets/js/ui.js"></script>
 	<title></title>
@@ -29,7 +30,25 @@
 			</hgroup>
 		</header>
 		<section class="middle_wrap type2">
-			내용이 들어갑니다.
+			<div class="midform_inwrap">
+				<fieldset class="midform_field">
+					<legend>관리자 로그인</legend>
+					<div class="midform_title">관리자 <span class="primay_text_item">로그인</span></div>
+					<div class="midform_primary_row">
+						<div class="midform_input_group">
+							<div class="midform_input_row"><input type="text" class="midform_input" placeholder="아이디를 입력해주세요."></div>
+							<div class="midform_input_row"><input type="password" class="midform_input" placeholder="비밀번호를 입력해주세요."></div>
+						</div>
+						<div class="midform_else_row">
+							<div class="props_form_item">
+								<input type="checkbox" class="props_form" id="idsave">
+								<label for="idsave" class="props_label">아이디 저장</label>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+				<div class="midform_submit_row"><a href="#" class="btn_midform_submit"><span class="btn_submit_text">로그인</span></a></div>
+			</div>
 		</section>
 		<div class="btn_gotop_wrap"><a href="javascript:;" class="btn_gotop"></a></div>
 		<footer class="footer_wrap">

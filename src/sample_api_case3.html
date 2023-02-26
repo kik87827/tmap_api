@@ -10,15 +10,15 @@
 					<div class="middle_left_item">
 						<h3 class="middle_left_title">SAMPLE</h3>
 						<ul class="middle_left_list">
-							<li><a href="#" class="middle_left_menu">대중교통 API</a></li>
-							<li class="active"><a href="#" class="middle_left_menu">대중교통 요약정보 API</a></li>
+							<li class="active"><a href="#" class="middle_left_menu">대중교통 API</a></li>
+							<li><a href="#" class="middle_left_menu">대중교통 요약정보 API</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="middle_right_cols">
 					<div class="middle_right_title_row">
-						<h2 class="middle_right_title">대중교통 요약정보 API</h2>
-						<p class="middle_right_title_copy">출발지/목적지에 대한 대중교통 경로 탐색 요약 결과를 확인할 수 있습니다.</p>
+						<h2 class="middle_right_title">대중교통 API</h2>
+						<p class="middle_right_title_copy">출발지/목적지에 대한 대중교통 경로 탐색 결과를 확인할 수 있습니다.</p>
 					</div>
 					<div class="middle_right_content_row">
 						<div class="apiform_wrap">
@@ -71,10 +71,10 @@
 									</div>
 								</div>
 								<div class="api_getdata_zone">
-									<div class="api_sort_row respon_type2">
+									<div class="api_sort_row">
 										<div class="sort_fix_cols">
 											<div class="combo_item" id="select_combo">
-												<a href="javascript:;" class="combo_target">지금 출발</a>
+												<a href="javascript:;" class="combo_target">날짜 입력</a>
 												<div class="combo_option_group">
 													<div class="combo_option_scroll">
 														<ul class="combo_option_list">
@@ -86,12 +86,51 @@
 											</div>
 										</div>
 										<div class="sort_long_cols">
+											<input type="text" class="form_input input_calendar" placeholder="0000-00-00 00:00">
 											<a href="javascript:;" class="btn_sort_submit"><span class="hdtext">검색</span></a>
 										</div>
 									</div>
 									<div class="api_getdata_row">
-										<ul class="api_getdata_list">
-											
+										<ul class="api_getdata_list mode_drawer">
+											<li>
+												<a href="#" class="api_getdata_item">
+													<div class="getdata_main">1시간 44분</div>
+													<div class="getdata_sub_g">
+														<ul class="datasub_list">
+															<li><span class="datasub">도보 26분</span></li>
+															<li><span class="datasub">환승 1회</span></li>
+															<li><span class="datasub">요금 3,200원</span></li>
+															<li><span class="datasub">46.2km</span></li>
+														</ul>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="api_getdata_item active">
+													<div class="getdata_main">1시간 44분</div>
+													<div class="getdata_sub_g">
+														<ul class="datasub_list">
+															<li><span class="datasub">도보 26분</span></li>
+															<li><span class="datasub">환승 1회</span></li>
+															<li><span class="datasub">요금 3,200원</span></li>
+															<li><span class="datasub">46.2km</span></li>
+														</ul>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="api_getdata_item">
+													<div class="getdata_main">1시간 44분</div>
+													<div class="getdata_sub_g">
+														<ul class="datasub_list">
+															<li><span class="datasub">도보 26분</span></li>
+															<li><span class="datasub">환승 1회</span></li>
+															<li><span class="datasub">요금 3,200원</span></li>
+															<li><span class="datasub">46.2km</span></li>
+														</ul>
+													</div>
+												</a>
+											</li>
 										</ul>
 									</div>
 								</div>
@@ -137,6 +176,10 @@
 									<div class="vitem_depitem">
 										<div class="vitem_dep_title_row">
 											<p class="vitem_dep_title">Response</p>
+											<div class="code_title_item">
+												<span class="code_mark" style="background-color:#09ec28;"></span>
+												<p class="code_title">200 – Result Sample</p>
+											</div>
 										</div>
 										<div class="vitem_dep_content">
 											<div class="code_item">
