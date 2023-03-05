@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="./assets/css/common.css" />
 	<script src="./assets/js/jquery-3.4.1.min.js"></script>
 	<script src="./assets/js/dynamicListener.min.js"></script>
-	<script src="./assets/js/jquery.datetimepicker.full.min.js"></script>
+	<script src="./assets/js/jquery.datetimepicker.full.js"></script>
 	<script src="./assets/js/swiper.min.js"></script>
 	<script src="./assets/js/ui.js"></script>
 	<title></title>
@@ -18,7 +18,198 @@
 <body class="front_body">
 	<div class="page_wrap">
 		<section class="main_guide_wrap">
-			내용이 들어갑니다.
+			<div class="mv_row">
+				<div class="mv_copy_group">
+					<p class="mv_copy_main"><img src="./assets/images/logo_tmapapi_x2.png" alt="TMAP 대중교통 API"></p>
+					<p class="mv_copy_sub">대중교통 API를 활용하여 빠르고 편리한 대중교통 서비스를 제공하세요.</p>
+					<div class="btn_primary_row">
+						<a href="#" class="btn_primary"><span class="btn_primary_text">API 가이드 바로가기</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="mc_group">
+				<div class="mc_copy_group">
+					<p class="mc_copy_sig">
+						<span class="mc_copy_intext">전 세계 대중교통의 표준 오픈 포맷인 GTFS 데이터를 활용하여</span>
+						<span class="mc_copy_intext">
+							<span class="mc_copy_intext_g">최적의 <strong>대중교통 경로탐색 서비스</strong>를 제공하는</span>
+							<span class="mc_copy_intext_img"><img src="./assets/images/copy_logo_tmapapi_sx2.png" alt="TMAP API"></span>
+							<span class="mc_copy_intext_g">입니다.</span>
+						</span>
+					</p>
+					<div class="mc_copy_sub_group">
+						<p class="mc_copy_sub">
+							세계에서 가장 널리 사용되고 있는 GTFS 기반 대중교통 데이터를 활용하여 출발지/목적지에 대한 최적의 대중교통 경로탐색 서비스를 제공합니다. 버스, 지하철, 기차, 항공, 해운 등 다양한 교통수단의 정보와 출발지/목적지/환승구간에 대한 도보 정보를 수집 및 분석합니다.
+						</p>
+						<p class="mc_copy_sub">
+							대중교통 서비스는 빠르고 편리한 최적경로 안내 서비스를 제공함과 동시에 사용자들의 대중교통 이용조건 충족 및 이동 편의까지 증진 시킬 수 있습니다.
+						</p>
+					</div>
+				</div>
+				<div class="mc_map_api_wrap">
+					<div class="mc_map_api">
+						<!-- api -->
+						<div style="font-size:16px;line-height:1;height:100%;background:#ccc;color:#000;display:flex;align-items: center;justify-content: center;">
+							API ZONE
+						</div>
+						<!-- // api -->
+					</div>
+				</div>
+				<div class="mc_vitem_group">
+					<div class="mc_vitem">
+						<div class="mc_vtitle_row">대중교통 서비스 <strong>주요 특징</strong></div>
+						<div class="mc_vcotent_row">
+							<ul class="icon_dia_list">
+								<li>
+									<div class="icon"></div>
+									<div class="spec_g">
+										<p class="spec_main">전국 모든 대중교통 <br>데이터</p>
+										<p class="spec_sub">버스, 지하철, 고속/시외버스, 기차, 항공, 해운 등 다양한 교통수단 데이터를 제공합니다.</p>
+									</div>
+								</li>
+								<li>
+									<div class="icon ico_02"></div>
+									<div class="spec_g">
+										<p class="spec_main">최적의 대중교통 경로</p>
+										<p class="spec_sub">운행시간표 기반된 최적의 대중교통 경로를 제공합니다.</p>
+									</div>
+								</li>
+								<li>
+									<div class="icon ico_03"></div>
+									<div class="spec_g">
+										<p class="spec_main">Multimodal Service</p>
+										<p class="spec_sub">대중교통 구간과 보행자 구간 조합으로 보다 상세한 대중교통 경로를 제공합니다.</p>
+									</div>
+								</li>
+								<li>
+									<div class="icon ico_04"></div>
+									<div class="spec_g">
+										<p class="spec_main">대중교통 표준 <br class="mb_br">오픈 포맷</p>
+										<p class="spec_sub">전 세계 대중교통 표준 오픈 포맷인 GTFS 기반의 대중교통 정보를 제공합니다.</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="mc_vitem type2">
+						<div class="mc_vtitle_row">대중교통 서비스 <strong>흐름도</strong></div>
+						<div class="mc_vcotent_row has_img">
+							<img src="./assets/images/img_flow_pc.png" class="pc_img" alt="">
+							<img src="./assets/images/img_flow_ta.png" class="tablet_img" alt="">
+							<img src="./assets/images/img_flow_mb.png" class="mobile_img" alt="">
+						</div>
+					</div>
+					<div class="mc_vitem type3">
+						<div class="mc_vtitle_row">대중교통 서비스 <strong>상품 정보</strong></div>
+						<div class="mc_vcotent_row">
+							<ul class="icon_dia2_list">
+								<li>
+									<div class="icon2"></div>
+									<div class="icon_sumary">
+										<p class="summary_title">대중교통</p>
+										<p class="summary_text">출발지/목적지에 대한 대중교통 경로탐색 정보와<br>전체 보행자 이동 경로를 제공합니다.</p>
+										<div class="btn_summary_g">
+											<a href="#" class="btn_summary">SAMPLE 보기</a>
+										</div>
+									</div>
+								</li>
+								<li class="type2">
+									<div class="icon2"></div>
+									<div class="icon_sumary">
+										<p class="summary_title">대중교통 요약정보</p>
+										<p class="summary_text">출발지/목적지에 대한 대중교통 경로탐색<br>요약 정보를 제공합니다.</p>
+										<div class="btn_summary_g">
+											<a href="#" class="btn_summary">SAMPLE 보기</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="mc_vitem type4">
+						<div class="mc_vtitle_row">대중교통 서비스 <strong>요금제</strong></div>
+						<div class="mc_vcotent_row">
+							<ul class="mc_vbox_list">
+								<li>
+									<div class="mc_vbox_title_row">
+										<p class="mc_vbox_title">FREE</p>
+									</div>
+									<div class="mc_vbox_content_row">
+										<div class="mc_vbox_content">
+											<dl class="keyvalue_hlist">
+												<dt><span class="keyvalue_label">대중교통 API</span></dt>
+												<dd>
+													<div class="keyvalue_item">
+														<p class="keyvalue_number">10</p>
+														<p class="keyvalue_unit">건 / 일</p>
+													</div>
+												</dd>
+											</dl>
+											<dl class="keyvalue_hlist">
+												<dt><span class="keyvalue_label">대중교통 <br class="mb_br">요약정보 API</span></dt>
+												<dd>
+													<div class="keyvalue_item">
+														<p class="keyvalue_number">10</p>
+														<p class="keyvalue_unit">건 / 일</p>
+													</div>
+												</dd>
+											</dl>
+										</div>
+										<div class="mc_vbox_content">
+											<p class="mc_vbox_guide_title">요금정책</p>
+											<ul class="mc_guide_list">
+												<li>사용한도 초과 시 자동으로 차단</li>
+												<li>사용량 확대 및 종량제로 변경을 원하실 경우 상품변경 구매가능</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="type2">
+									<div class="mc_vbox_title_row">
+										<p class="mc_vbox_title">종량제</p>
+									</div>
+									<div class="mc_vbox_content_row">
+										<div class="mc_vbox_content">
+											<dl class="keyvalue_hlist">
+												<dt><span class="keyvalue_label">대중교통 API</span></dt>
+												<dd>
+													<div class="keyvalue_item">
+														<p class="keyvalue_number">0.8</p>
+														<p class="keyvalue_unit">원 / 건</p>
+													</div>
+												</dd>
+											</dl>
+											<dl class="keyvalue_hlist">
+												<dt><span class="keyvalue_label">대중교통 <br class="mb_br">요약정보 API</span></dt>
+												<dd>
+													<div class="keyvalue_item">
+														<p class="keyvalue_number">0.5</p>
+														<p class="keyvalue_unit">원 / 건</p>
+													</div>
+												</dd>
+											</dl>
+										</div>
+										<div class="mc_vbox_content">
+											<p class="mc_vbox_guide_title">요금정책</p>
+											<ul class="mc_guide_list">
+												<li>사용 건 별로 후불 청구</li>
+												<li>사용량에 따라 종량 요금제로 제공</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="mc_bottom_group">
+					<p class="mc_bottom_qus">API에 대해서 궁금한 점이 있으신가요?</p>
+					<ul class="mc_botlink_list">
+						<li><a href="javascript:;" class="mc_botlink"><span class="mc_botlink_intext">TMAP 대중교통 API 공지사항</span></a></li>
+						<li><a href="javascript:;" class="mc_botlink type2"><span class="mc_botlink_intext">SK open API 개발자 커뮤니티</span></a></li>
+					</ul>
+				</div>
+			</div>
 		</section>
 		<div class="btn_gotop_wrap"><a href="javascript:;" class="btn_gotop"></a></div>
 		<footer class="footer_wrap">

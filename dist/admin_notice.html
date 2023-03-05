@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="./assets/css/common.css" />
 	<script src="./assets/js/jquery-3.4.1.min.js"></script>
 	<script src="./assets/js/dynamicListener.min.js"></script>
-	<script src="./assets/js/jquery.datetimepicker.full.min.js"></script>
+	<script src="./assets/js/jquery.datetimepicker.full.js"></script>
 	<script src="./assets/js/swiper.min.js"></script>
 	<script src="./assets/js/ui.js"></script>
 	<title></title>
@@ -35,24 +35,174 @@
 					<h2 class="middle_single_title">공지사항</h2>
 				</div>
 				<div class="middle_single_content_row">
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.
+					<div class="sort_field_wrap type2">
+						<div class="sort_field">
+							<div class="sort_fcols wid_pix">
+								<div class="combo_item type2" id="sort_combo">
+									<a href="javascript:;" class="combo_target">전체</a>
+									<div class="combo_option_group type2">
+										<div class="combo_option_scroll">
+											<ul class="combo_option_list">
+												<li><a href="javascript:;" data-value="option_0" class="combo_option">제목</a></li>
+												<li><a href="javascript:;" data-value="option_1" class="combo_option">등록일</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sort_fcols wid_full">
+								<div class="search_box">
+									<input type="text" class="form_input" placeholder="제목을 입력해주세요.">
+									<a href="javascript:;" class="btn_search_submit"><span class="hdtext">검색</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="sort_btn_field">
+							<a href="#" class="btn_box else htype2"><span class="box_intext">삭제</span></a>
+							<a href="#" class="btn_box primary htype2"><span class="box_intext">등록</span></a>
+						</div>
+					</div>
+
+					<div class="list_ui_wrap">
+						<div class="list_thead_row">
+							<ul class="list_thead">
+								<li class="cell_full"><span class="thead_text">제목</span></li>
+								<li class="cell_pix wid_short" data-pcwid="160"><span class="thead_text">등록일</span></li>
+								<li class="cell_pix wid_xshort" data-pcwid="80"><span class="thead_text">조회수</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="list_tbody_row">
+						<ul class="list_tbody respon_type2">
+							<li>
+								<div class="cell_pix define_control"><input type="checkbox" class="props_form"></div>
+								<div class="cell_full">
+									<div class="list_primary_item">
+										<span class="badge primary">중요</span>
+										<a href="javascript:;" class="list_target">22년 12월 정기 업데이트</a>
+									</div>
+								</div>
+								<div class="cell_pix wid_short" data-pcwid="160"><span class="tbody_text">2022-12-12</span></div>
+								<div class="cell_pix wid_xshort" data-pcwid="80"><span class="tbody_text">100</span></div>
+							</li>
+							<li>
+								<div class="cell_pix define_control"><input type="checkbox" class="props_form" checked></div>
+								<div class="cell_full">
+									<div class="list_primary_item">
+										<span class="badge primary">중요</span>
+										<a href="javascript:;" class="list_target">22년 12월 정기 업데이트22년 12월 정기 업데이트22년 12월 정기 업데이트22년 12월 정기 업데이트22년 1222년 12월 정기 업데이트22년 12월 정기 업데이트22년 12월 정기 업데이트이트22년 12월 정기 업데이트22년 12월 정기 업데이트</a>
+									</div>
+								</div>
+								<div class="cell_pix wid_short" data-pcwid="160"><span class="tbody_text">2022-12-12</span></div>
+								<div class="cell_pix wid_xshort" data-pcwid="80"><span class="tbody_text">100</span></div>
+							</li>
+							<li>
+								<div class="cell_pix define_control"><input type="checkbox" class="props_form"></div>
+								<div class="cell_full">
+									<div class="list_primary_item">
+										<span class="badge">공지</span>
+										<a href="javascript:;" class="list_target">22년 12월 정기 업데이트22년 12월 정기 업데이트22년 12월 정기 업데이트22년 12월 정기 업데이트22년 12월 정기 업데이트22년 12월 정기 업데이트22년 12월 정기 업데이트22년 12월 정기 업데이트22년 12월 정기 업데이트22년 12월 정기 업데이트22년 12월 정기 업데이트22년 12월 정기 업데이트</a>
+										<div class="data_marking_wrap">
+											<span class="data_marking"><span class="hdtext">POP-UP</span></span>
+										</div>
+									</div>
+								</div>
+								<div class="cell_pix wid_short" data-pcwid="160"><span class="tbody_text">2022-12-12</span></div>
+								<div class="cell_pix wid_xshort" data-pcwid="80"><span class="tbody_text">100</span></div>
+							</li>
+							<li>
+								<div class="cell_pix define_control"><input type="checkbox" class="props_form"></div>
+								<div class="cell_full">
+									<div class="list_primary_item">
+										<span class="badge">공지</span>
+										<a href="javascript:;" class="list_target">22년 12월 정기 업데이트</a>
+										<div class="data_marking_wrap">
+											<span class="data_marking"><span class="hdtext">POP-UP</span></span>
+										</div>
+									</div>
+								</div>
+								<div class="cell_pix wid_short" data-pcwid="160"><span class="tbody_text">2022-12-12</span></div>
+								<div class="cell_pix wid_xshort" data-pcwid="80"><span class="tbody_text">100</span></div>
+							</li>
+							<li>
+								<div class="cell_pix define_control"><input type="checkbox" class="props_form"></div>
+								<div class="cell_full">
+									<div class="list_primary_item">
+										<span class="badge">공지</span>
+										<a href="javascript:;" class="list_target">22년 12월 정기 업데이트</a>
+									</div>
+								</div>
+								<div class="cell_pix wid_short" data-pcwid="160"><span class="tbody_text">2022-12-12</span></div>
+								<div class="cell_pix wid_xshort" data-pcwid="80"><span class="tbody_text">100</span></div>
+							</li>
+							<li>
+								<div class="cell_pix define_control"><input type="checkbox" class="props_form"></div>
+								<div class="cell_full">
+									<div class="list_primary_item">
+										<span class="badge">공지</span>
+										<a href="javascript:;" class="list_target">22년 12월 정기 업데이트</a>
+									</div>
+								</div>
+								<div class="cell_pix wid_short" data-pcwid="160"><span class="tbody_text">2022-12-12</span></div>
+								<div class="cell_pix wid_xshort" data-pcwid="80"><span class="tbody_text">100</span></div>
+							</li>
+							<li>
+								<div class="cell_pix define_control"><input type="checkbox" class="props_form"></div>
+								<div class="cell_full">
+									<div class="list_primary_item">
+										<span class="badge">공지</span>
+										<a href="javascript:;" class="list_target">22년 12월 정기 업데이트</a>
+									</div>
+								</div>
+								<div class="cell_pix wid_short" data-pcwid="160"><span class="tbody_text">2022-12-12</span></div>
+								<div class="cell_pix wid_xshort" data-pcwid="80"><span class="tbody_text">100</span></div>
+							</li>
+							<li>
+								<div class="cell_pix define_control"><input type="checkbox" class="props_form"></div>
+								<div class="cell_full">
+									<div class="list_primary_item">
+										<span class="badge">공지</span>
+										<a href="javascript:;" class="list_target">22년 12월 정기 업데이트</a>
+									</div>
+								</div>
+								<div class="cell_pix wid_short" data-pcwid="160"><span class="tbody_text">2022-12-12</span></div>
+								<div class="cell_pix wid_xshort" data-pcwid="80"><span class="tbody_text">100</span></div>
+							</li>
+							<li class="nodata_item">
+								<p class="nodata_para">검색된 결과가 없습니다.</p>
+							</li>
+						</ul>
+					</div>
+
+					<!-- paging -->
+					<div class="paging_wrap">
+						<a href="#" class="paging_control go_first"><span class="hdtext">처음</span></a>
+						<a href="#" class="paging_control go_prev"><span class="hdtext">이전</span></a>
+						<ul class="paging_link_list">
+							<li><a href="#" class="paging_link active">1</a></li>
+							<li><a href="#" class="paging_link">2</a></li>
+							<li><a href="#" class="paging_link">3</a></li>
+							<li><a href="#" class="paging_link">4</a></li>
+							<li><a href="#" class="paging_link">5</a></li>
+						</ul>
+						<a href="#" class="paging_control go_next"><span class="hdtext">다음</span></a>
+						<a href="#" class="paging_control go_last"><span class="hdtext">마지막</span></a>
+					</div>
+					<!-- // paging -->
 				</div>
 			</div>
 		</section>
+		<script>
+			comboFunc();
+
+			// combobox
+			comboChangeCallback({
+				target: "sort_combo",
+				callback(value) {
+					console.log(value);
+				}
+			});
+		</script>
 		<div class="btn_gotop_wrap"><a href="javascript:;" class="btn_gotop"></a></div>
 		<footer class="footer_wrap">
 			<div class="footer_inpix">

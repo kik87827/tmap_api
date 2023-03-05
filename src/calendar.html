@@ -3,12 +3,20 @@
 	@@include('./include/_head.html')
 <body class="front_body">
 	<div class="page_wrap">
-		<input id="datetimepicker" type="text" >
+		<div style="padding:16px">
+			<input id="datetimepicker" type="text" >
+			<input id="datetimepicker2" type="text" >
+		</div>
 	</div>
 	<script>
 		$('#datetimepicker').datetimepicker({
-			mask:true,
-			format:'Y-m-d  H:i'
+			format:'Y-m-d',
+			inline:true,
+			timepicker:false
+		});
+		$('#datetimepicker2').datetimepicker({
+			format:'Y-m-d H:i',
+			inline:true,
 		});
 	</script>
 </body>

@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="./assets/css/common.css" />
 	<script src="./assets/js/jquery-3.4.1.min.js"></script>
 	<script src="./assets/js/dynamicListener.min.js"></script>
-	<script src="./assets/js/jquery.datetimepicker.full.min.js"></script>
+	<script src="./assets/js/jquery.datetimepicker.full.js"></script>
 	<script src="./assets/js/swiper.min.js"></script>
 	<script src="./assets/js/ui.js"></script>
 	<title></title>
@@ -17,12 +17,20 @@
 
 <body class="front_body">
 	<div class="page_wrap">
-		<input id="datetimepicker" type="text">
+		<div style="padding:16px">
+			<input id="datetimepicker" type="text">
+			<input id="datetimepicker2" type="text">
+		</div>
 	</div>
 	<script>
 		$('#datetimepicker').datetimepicker({
-			mask: true,
-			format: 'Y-m-d  H:i'
+			format: 'Y-m-d',
+			inline: true,
+			timepicker: false
+		});
+		$('#datetimepicker2').datetimepicker({
+			format: 'Y-m-d H:i',
+			inline: true,
 		});
 	</script>
 </body>
