@@ -135,6 +135,16 @@ function layoutFunc() {
 }
 
 /**
+ * menu rock
+ */
+function menuRock(target) {
+  const targetDom = document.querySelector(target);
+  if (!!targetDom) {
+    targetDom.classList.add("active");
+  }
+}
+
+/**
  * 디자인 모달
  * @param {*} option 
  */

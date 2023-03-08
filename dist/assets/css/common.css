@@ -1678,6 +1678,9 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
 .header_menu_two_list > li:last-of-type {
   margin-bottom: 0;
 }
+.header_menu_two_list > li.active .header_menu_two:after {
+  width: 100% !important;
+}
 
 .btn_header_menu_close {
   display: inline-block;
@@ -1979,8 +1982,11 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
-.footer_icomenu.ico_logout {
+.footer_icomenu.ico_login {
   background-image: url("../images/ic_login@3x.png");
+}
+.footer_icomenu.ico_logout {
+  background-image: url("../images/ic_logout@3x.png");
 }
 
 .footer_menu {
@@ -1989,6 +1995,9 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
   line-height: 1;
   color: #fff;
   white-space: nowrap;
+}
+.footer_menu:hover {
+  text-decoration: underline !important;
 }
 
 .btn_gotop_wrap {
@@ -2158,6 +2167,10 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
   color: #0264ff !important;
 }
 
+a.primay_text_item:hover {
+  text-decoration: underline !important;
+}
+
 .btn_box {
   display: inline-block;
   position: relative;
@@ -2245,7 +2258,11 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
   max-width: 40%;
 }
 
-.line_link {
+a.line_link {
+  text-decoration: underline;
+}
+a.line_link:hover {
+  color: #0264FF !important;
   text-decoration: underline;
 }
 
@@ -2310,7 +2327,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
 
 .combo_option {
   font-size: 0.875rem;
-  color: #868E96;
+  color: #000000;
   display: block;
   padding: 0.5rem 0.625rem;
 }
@@ -3006,6 +3023,9 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
   position: relative;
   top: 0.0625rem;
 }
+.btn_text_item:hover {
+  text-decoration: underline !important;
+}
 
 .text_item_in {
   display: inline-block;
@@ -3461,6 +3481,9 @@ input.form_input:focus {
   margin-left: 1.25rem;
   flex: 1;
   min-width: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
 }
 
 .api_getdata_item {
@@ -3536,7 +3559,7 @@ input.form_input:focus {
 
 input.input_calendar {
   flex: 1;
-  height: 2.75rem;
+  height: 3.25rem;
   padding: 0 3rem 0 0.75rem;
   background: #fff url("../images/input_ico_calendar.png") no-repeat 100% 50%/2.625rem auto;
 }
@@ -3574,7 +3597,7 @@ input.input_calendar {
   border-color: #0264ff;
 }
 .search_field_wrap .form_input_item.typing input.form_input {
-  border-color: #ccc !important;
+  border-color: #0264ff !important;
   border-radius: 0.25rem 0.25rem 0 0;
 }
 
@@ -3602,8 +3625,8 @@ input.input_calendar {
   top: 100%;
   left: 0;
   width: 100%;
-  border: 0.0625rem solid #ccc;
-  border-top: 0;
+  border: 0.0625rem solid #0264ff;
+  border-top: 0.0625rem solid #e2e4ee;
   border-radius: 0 0 0.25rem 0.25rem;
   box-sizing: border-box;
   background: #fff;
@@ -3756,6 +3779,9 @@ input.input_calendar {
   }
   .sort_long_cols {
     flex: inherit;
+  }
+  input.input_calendar {
+    height: 2.75rem;
   }
 }
 @media (max-width: 767px) {
@@ -4149,7 +4175,7 @@ input.props_form[type=radio]:checked {
 .formview_tb {
   border-top: 2px solid #000;
   border-bottom: 1px solid #e2e4ee;
-  padding: 1.25rem 0;
+  padding: 1.25rem 0 0.875rem;
 }
 .formview_tb + .btn_bottom_group {
   margin-top: 2.5rem;
@@ -4206,6 +4232,22 @@ textarea.form_textarea:focus {
   justify-content: space-between;
   min-height: 3.25rem;
   align-items: center;
+}
+
+.formview_count_row {
+  padding: 0.875rem 0 0;
+  text-align: right;
+}
+
+.formview_count_item {
+  display: inline-block;
+  font-size: 0.875rem;
+  color: #666666;
+  line-height: 1;
+}
+
+.fv_count_current {
+  color: #000000;
 }
 
 .props_item_list {
@@ -4322,6 +4364,12 @@ textarea.form_textarea:focus {
   }
   .comp_guide_copy_group {
     padding-left: 1.875rem;
+  }
+  .formview_tb {
+    padding-bottom: 0.625rem;
+  }
+  .formview_count_row {
+    padding-top: 0.625rem;
   }
 }
 @media (max-width: 767px) {
@@ -4745,6 +4793,9 @@ textarea.form_textarea:focus {
   font-weight: 700;
   position: relative;
   top: -0.0625rem;
+}
+.list_target:hover {
+  text-decoration: underline !important;
 }
 
 .badge {
@@ -5384,13 +5435,17 @@ a.data_pn_item:hover {
 }
 
 .mc_map_api {
-  border-radius: 1.25rem;
-  height: 28.125rem;
+  border-radius: 1.25rem; /* height:rem(450); */
   overflow: hidden;
   position: relative;
   max-width: 75rem;
   margin: 0 auto;
   z-index: 1;
+}
+
+.mc_map_api > img {
+  vertical-align: top;
+  width: 100%;
 }
 
 .mc_vitem {
@@ -6011,9 +6066,7 @@ li.type2 .keyvalue_number {
     font-size: 0.875rem;
     line-height: 1.5;
   }
-  .mc_map_api {
-    height: 23.25rem;
-  }
+  .mc_map_api { /* height:rem(372) */ }
   .mc_vtitle_row {
     font-size: 1.375rem;
   }

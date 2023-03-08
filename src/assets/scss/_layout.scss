@@ -62,6 +62,10 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
     > li{
         margin-bottom:rem(14);
         &:last-of-type{margin-bottom:0;}
+
+        &.active .header_menu_two{
+            &:after{width:100% !important;}
+        }
     }
 }
 .btn_header_menu_close{
@@ -78,6 +82,8 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
         &:after{width:100%;}
     }
 }
+
+
 .header_topmenu_list{
     display:flex;align-items:center;
     > li{
@@ -165,11 +171,13 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
 }
 .footer_icomenu{
     display:inline-block;width:rem(24);height:rem(24);background-position:0 0;background-repeat:no-repeat;background-size:100% auto;
-    &.ico_logout{background-image:url("../images/ic_login@3x.png")}
+    &.ico_login{background-image:url("../images/ic_login@3x.png")}
+    &.ico_logout{background-image:url("../images/ic_logout@3x.png")}
 }
 
 .footer_menu{
     display:inline-block;font-size:rem(14);line-height:1;color:#fff;white-space: nowrap;
+    &:hover{text-decoration: underline !important;}
 }
 
 .btn_gotop_wrap{position:fixed;bottom:rem(30);right:rem(30);z-index:20;}
