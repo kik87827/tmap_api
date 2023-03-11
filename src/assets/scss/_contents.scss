@@ -321,14 +321,14 @@ a.line_link{text-decoration: underline;
 .img_step_item{}
 .img_step_thum{
     background: #f2f5fb;position:relative;border-radius:100%;height:0;padding-bottom:0;padding-bottom:100%;max-width:100%;display:block;
-    &:after{display:block;content:'';width:rem(80);height:rem(80);background:url("../images/ic_akapi.png") no-repeat 0 0/100% auto;position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);}
+    &:after{display:block;content:'';width:rem(80);height:rem(80);background:url("../images/ic_akapix2.png") no-repeat 0 0/100% auto;position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);}
     &.ico_02:after{background-position:0 20%;}
     &.ico_03:after{background-position:0 40%;}
     &.ico_04:after{background-position:0 60%;}
     &.ico_05:after{background-position:0 80%;}
     &.ico_06:after{background-position:0 100%;}
 }
-.img_step_text{font-size:rem(16); color: #666;line-height:1.3;margin-top:rem(16);}
+.img_step_text{font-size:rem(16); color: #666;line-height:1.5;margin-top:rem(16);}
 .define_step_list{
     margin-top:rem(80);
     > li{

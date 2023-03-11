@@ -86,7 +86,7 @@
 							</li>
 							<li>
 								<div class="img_step_item">
-									<i class="img_step_thum ico_02"></i>
+									<i class="img_step_thum ico_03"></i>
 									<p class="img_step_text">SK OPEN API 상품 구매<br>(앱 키 발급)</p>
 								</div>
 							</li>
@@ -302,6 +302,14 @@
 		<script>
 			// rock
 			menuRock("#menu01_02");
+
+			stepResponFunc({
+				target: ".img_step_list",
+				thum_pc: ["ico_01", "ico_03", "ico_05", "ico_06"],
+				thum_mobile: ["ico_01", "ico_03", "ico_06", "ico_05"],
+				text_pc: ["SK OPEN API<br>회원가입/로그인", "SK OPEN API 상품 구매(앱 키 발급)", "OPEN API 호출", "응답 또는 에러 처리"],
+				text_mobile: ["SK OPEN API<br>회원가입/로그인", "SK OPEN API 상품 <br>구매 (앱 키 발급)", "응답 또는 에러 처리", "OPEN API 호출"]
+			});
 		</script>
 		<div class="btn_gotop_wrap"><a href="javascript:;" class="btn_gotop"></a></div>
 		<footer class="footer_wrap">

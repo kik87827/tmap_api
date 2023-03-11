@@ -236,11 +236,11 @@
 								<div class="step_title_row">
 									<div class="step_title_main">
 										<span class="step_title_bullet">STEP 04</span>
-										<span class="step_title_text"></span>
+										<span class="step_title_text">서비스 이용</span>
 									</div>
-									<div class="step_title_else">
+									<!-- <div class="step_title_else">
 										<a href="javascript:;" class="btn_text_item ico_direct"><span class="text_item_in">바로가기</span></a>
-									</div>
+									</div> -->
 								</div>
 								<div class="step_content_row">
 									<ul class="indent_order_list">
@@ -262,6 +262,14 @@
 		<script>
 			// rock
 			menuRock("#menu01_01");
+
+			stepResponFunc({
+				target: ".img_step_list",
+				thum_pc: ["ico_01", "ico_02", "ico_03", "ico_04"],
+				thum_mobile: ["ico_01", "ico_02", "ico_04", "ico_03"],
+				text_pc: ["회원가입/로그인", "앱 만들기", "상품 구매", "서비스 이용"],
+				text_mobile: ["회원가입/로그인", "앱 만들기", "서비스 이용", "상품 구매"]
+			});
 		</script>
 		<div class="btn_gotop_wrap"><a href="javascript:;" class="btn_gotop"></a></div>
 		<footer class="footer_wrap">

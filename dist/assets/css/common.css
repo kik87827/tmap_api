@@ -2925,7 +2925,7 @@ a.line_link:hover {
   content: "";
   width: 5rem;
   height: 5rem;
-  background: url("../images/ic_akapi.png") no-repeat 0 0/100% auto;
+  background: url("../images/ic_akapix2.png") no-repeat 0 0/100% auto;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2950,7 +2950,7 @@ a.line_link:hover {
 .img_step_text {
   font-size: 1rem;
   color: #666;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-top: 1rem;
 }
 

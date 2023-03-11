@@ -636,6 +636,39 @@ function comboChangeCallback(option) {
 }
 
 
+/* step respon */
+function stepResponFunc(option){
+  action();
+  window.addEventListener("resize",()=>{
+    action();
+  });
+  
+  function action(){
+      let stepText = [];
+      let stepIcon = [];
+      if(window.innerWidth >= 768){
+        stepIcon = option.thum_pc;
+        stepText = option.text_pc;
+      }else{
+        stepIcon = option.thum_mobile;
+        stepText = option.text_mobile;
+      }
+      if(!!option.target){
+        document.querySelectorAll(option.target).forEach((target)=>{
+          target.querySelectorAll(".img_step_thum").forEach((thum,index)=>{
+            if(Array.from(thum.classList).length>1){
+              thum.classList.remove(Array.from(thum.classList)[1]);
+            }
+            thum.classList.add(stepIcon[index])
+          })
+          target.querySelectorAll(".img_step_text").forEach((textDom,index)=>{
+            textDom.innerHTML = stepText[index];
+          })
+        })
+      }
+    }
+}
+
 
 /* search  */
 function searchForm() {
