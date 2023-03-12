@@ -1294,7 +1294,7 @@ textarea.form_textarea{
     }
 }
 .search_box{
-    border:solid 1px #ccc;border-radius: rem(4);position:relative;overflow:hidden;display:flex;align-items:center;line-height:0;
+    border:solid 1px #ccc;border-radius: rem(4);position:relative;overflow:hidden;display:flex;align-items:center;line-height:0;background-color:#fff;
     > input.form_input{border:0;height:rem(50);padding-right:0;}
 }
 .btn_search_submit{flex:0 0 rem(50);width:rem(50);height:rem(50);display:block;background:url("../images/ic_searchs@3x.png") no-repeat 50% 50%/rem(24) auto;}
