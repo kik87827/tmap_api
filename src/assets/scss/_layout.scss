@@ -7,7 +7,8 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
 .page_wrap{min-width:rem(280);}
 .header_wrap{
     position:sticky;top:0;left:0;z-index:20;
-    background-image: linear-gradient(to right, #f445ba, #783bff 32%, #0264ff 67%, #2ed9b7);
+    // background-image: linear-gradient(to right, #f445ba, #783bff 32%, #0264ff 67%, #2ed9b7);
+    background-image: linear-gradient(to right, #f445ba, #783bff);
     &.type2{
         .header_inpix{min-height:rem(40);}
     }
@@ -177,7 +178,8 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
 
 .footer_menu{
     display:inline-block;font-size:rem(14);line-height:1;color:#fff;white-space: nowrap;
-    &:hover{text-decoration: underline !important;}
+    &:hover{color:#b8c9e8 !important;}
+    // &:hover{text-decoration: underline !important;}
 }
 
 .btn_gotop_wrap{position:fixed;bottom:rem(30);right:rem(30);z-index:20;}
