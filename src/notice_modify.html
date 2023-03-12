@@ -63,8 +63,19 @@
 						</div>
 						<div class="formview_tr mtype2">
 							<div class="formview_cell define_th"><span class="form_label"><span class="form_label_text">등록일</span></span></div>
-							<div class="formview_cell define_td">
-								<input type="text" class="form_input input_calendar wid_p40" placeholder="0000-00-00" value="2022-12-09">
+							<div class="formview_cell define_td has_calendar">
+								<!-- <input type="text" class="form_input input_calendar wid_p40" placeholder="0000-00-00" value="2022-12-09"> -->
+								<!-- [230312] 수정 -->
+								<div class="input_field_wrap pc_fitem wid_p40">
+									<input type="text" class="form_input input_calendar" placeholder="0000-00-00" value="2022-12-09">
+								</div>
+								<div class="input_field_wrap mb_fitem">
+									<div class="input_calendar_mb_wrap">
+										<span class="calendar_mb_placeholder">0000-00-00</span>
+										<input type="date" class="form_input input_calendar_mb" value="2022-12-09">
+									</div>
+								</div>
+								<!-- // [230312] 수정 -->
 							</div>
 						</div>
 						<div class="formview_tr">
@@ -96,10 +107,16 @@
 		@@include('./include/_footer2.html')
 		<script>
 			//calendar
+			// [230313] 추가
 			$('.input_calendar').datetimepicker({
 				format:'Y-m-d',
-				timepicker:false
+				timepicker:false,
+				onChangeDateTime: function (dp, $input) {
+					$input.parents(".has_calendar").find(".input_calendar_mb_wrap").addClass("active");
+					$input.parents(".has_calendar").find(".input_calendar_mb").val($input.val())
+				}
 			});
+			mbDateCall();
 		</script>
 	</div>
 </body>

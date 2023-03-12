@@ -1,4 +1,6 @@
 /* contents */
+.pc_fitem{display:flex !important;}
+.mb_fitem{display:none !important;}
 .primay_text_item{
     color:#0264ff !important;
     *{color:#0264ff !important;}
@@ -195,6 +197,9 @@ a.line_link{text-decoration: underline;
     .pc_img{display:none !important;}
     .tablet_img{display:none !important;}
     .mobile_img{display:inline !important;}
+
+    .pc_fitem{display:none !important;}
+    .mb_fitem{display:flex !important;}
 }
 
 @media (max-width:$breakpoint-smallphones){
@@ -634,9 +639,28 @@ input.form_input{
     > input.input_calendar{flex:1;height:rem(44);}
     > .btn_sort_submit{margin-left:rem(12);}
 }
+.input_field_wrap{
+    display:flex;align-items:center;box-sizing:border-box;width:100%;
+    > input.input_calendar_mb,
+    > input.input_calendar{flex:1;height:rem(44);}
+    > .btn_sort_submit{margin-left:rem(12);}
+}
+.formview_cell{
+    .input_field_wrap{
+        > input.input_calendar{height:rem(52);}
+    }
+}
 input.input_calendar{flex:1;height:rem(52);padding:0 rem(48) 0 rem(12);background:#fff url("../images/input_ico_calendar.png") no-repeat 100% 50%/rem(42) auto;}
+input.input_calendar_mb{position:relative;z-index:1;flex:1;height:rem(52);color:transparent;padding:0 rem(48) 0 rem(12);font-family: 'Noto Sans KR', Dotum, verdana, sans-serif;background:transparent url("../images/input_ico_calendar.png") no-repeat 100% 50%/rem(42) auto;-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+.input_calendar_mb_wrap{flex: 1;position:relative;
+    &.active{
+        .calendar_mb_placeholder{display:none;}
+        input.input_calendar_mb{color:#000;}
+    }
+}
+.calendar_mb_placeholder{font-size:rem(14);z-index:0;position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items: center;justify-content: left;color: #999;box-sizing: border-box;padding:0 rem(12)}
 .btn_sort_submit{
-    width: rem(44);height: rem(44);display:inline-block;flex:0 0 rem(44);box-sizing: border-box;
+    width: rem(44);height: rem(44);display:inline-block;flex:0 0 rem(44);box-sizing: border-box;color:transparent;
     border-radius: rem(4);background: #232529 url("../images/ic_searchs_w@3x.png") no-repeat 50% 50%/rem(24) auto;
 }
 
@@ -768,9 +792,10 @@ input.input_calendar{flex:1;height:rem(52);padding:0 rem(48) 0 rem(12);backgroun
     .datasub_list{padding-top:rem(8)}
 
     .sort_long_cols{flex:inherit;}
-
     
-    input.input_calendar{height:rem(44)}
+    
+    input.input_calendar_mb,
+    input.input_calendar{height:rem(44) !important}
 }
 
 @media (max-width:$breakpoint-phones){

@@ -38,6 +38,14 @@ textarea{font-family: 'Noto Sans KR';color:#000;border:1px solid #c8c8c8;-webkit
 ::-ms-input-placeholder{color:#999;font-family: 'Noto Sans KR';}
 ::input-placeholder{color:#999;font-family: 'Noto Sans KR';}
 
+::-webkit-inner-spin-button {
+    display: none;
+}
+::-webkit-calendar-picker-indicator {
+    display: none;
+}
+::-webkit-date-and-time-value{ text-align:left; }
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,

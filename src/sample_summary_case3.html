@@ -85,10 +85,21 @@
 												</div>
 											</div>
 										</div>
-										<div class="sort_long_cols">
-											<input type="text" class="form_input input_calendar" placeholder="0000-00-00 00:00">
-											<a href="javascript:;" class="btn_sort_submit"><span class="hdtext">검색</span></a>
+										<!-- [230313] 수정 -->
+										<div class="sort_long_cols has_calendar">
+											<div class="input_field_wrap pc_fitem">
+												<input type="text" class="form_input input_calendar" placeholder="0000-00-00 00:00">
+												<a href="javascript:;" class="btn_sort_submit"><span class="hdtext">검색</span></a>
+											</div>
+											<div class="input_field_wrap mb_fitem">
+												<div class="input_calendar_mb_wrap">
+													<span class="calendar_mb_placeholder">0000-00-00 00:00</span>
+													<input type="datetime-local" class="form_input input_calendar_mb">
+												</div>
+												<input type="submit" class="btn_sort_submit">
+											</div>
 										</div>
+										<!-- // [230313] 수정 -->
 									</div>
 									<div class="api_getdata_row">
 										<ul class="api_getdata_list">
@@ -225,9 +236,15 @@
 			});
 
 			//calendar
+			// [230313] 수정/추가
 			$('.input_calendar').datetimepicker({
-				format:'Y-m-d H:i'
+				format:'Y-m-d H:i',
+				onChangeDateTime: function (dp, $input) {
+					$input.parents(".has_calendar").find(".input_calendar_mb_wrap").addClass("active");
+					$input.parents(".has_calendar").find(".input_calendar_mb").val($input.val().split("t").join(''))
+				}
 			});
+			mbDateCall();
 
 			// rock
 			menuRock("#menu03_02");

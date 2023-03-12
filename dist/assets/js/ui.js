@@ -835,3 +835,31 @@ function searchForm() {
     }
   }
 }
+
+
+function mbDateCall() {
+  const input_calendar_mb = document.querySelectorAll(".input_calendar_mb");
+  if (!!input_calendar_mb) {
+    Array.from(input_calendar_mb).forEach((item) => {
+      checkValue();
+      item.addEventListener("click", () => {
+        item.closest(".input_calendar_mb_wrap").classList.add("active");
+      })
+      item.addEventListener("focusout", checkValue)
+      item.addEventListener("change", checkValue)
+
+      function checkValue() {
+        if (item.value.length > 0) {
+          item.closest(".input_calendar_mb_wrap").classList.add("active");
+        } else {
+          item.closest(".input_calendar_mb_wrap").classList.remove("active");
+        }
+        const pcCalendar = item.closest(".has_calendar").querySelector(".pc_fitem .input_calendar");
+        if (!!pcCalendar) {
+          pcCalendar.value = item.value.split("T").join(" ");
+        }
+      }
+    })
+  }
+
+}

@@ -179,6 +179,18 @@ textarea {
   font-family: "Noto Sans KR";
 }
 
+::-webkit-inner-spin-button {
+  display: none;
+}
+
+::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+::-webkit-date-and-time-value {
+  text-align: left;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -2160,6 +2172,14 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
   }
 }
 /* contents */
+.pc_fitem {
+  display: flex !important;
+}
+
+.mb_fitem {
+  display: none !important;
+}
+
 .primay_text_item {
   color: #0264ff !important;
 }
@@ -2610,6 +2630,12 @@ a.line_link:hover {
   }
   .mobile_img {
     display: inline !important;
+  }
+  .pc_fitem {
+    display: none !important;
+  }
+  .mb_fitem {
+    display: flex !important;
   }
 }
 @media (max-width: 359px) {
@@ -3557,11 +3583,71 @@ input.form_input:focus {
   margin-left: 0.75rem;
 }
 
+.input_field_wrap {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+.input_field_wrap > input.input_calendar_mb,
+.input_field_wrap > input.input_calendar {
+  flex: 1;
+  height: 2.75rem;
+}
+.input_field_wrap > .btn_sort_submit {
+  margin-left: 0.75rem;
+}
+
+.formview_cell .input_field_wrap > input.input_calendar {
+  height: 3.25rem;
+}
+
 input.input_calendar {
   flex: 1;
   height: 3.25rem;
   padding: 0 3rem 0 0.75rem;
   background: #fff url("../images/input_ico_calendar.png") no-repeat 100% 50%/2.625rem auto;
+}
+
+input.input_calendar_mb {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  height: 3.25rem;
+  color: transparent;
+  padding: 0 3rem 0 0.75rem;
+  font-family: "Noto Sans KR", Dotum, verdana, sans-serif;
+  background: transparent url("../images/input_ico_calendar.png") no-repeat 100% 50%/2.625rem auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.input_calendar_mb_wrap {
+  flex: 1;
+  position: relative;
+}
+.input_calendar_mb_wrap.active .calendar_mb_placeholder {
+  display: none;
+}
+.input_calendar_mb_wrap.active input.input_calendar_mb {
+  color: #000;
+}
+
+.calendar_mb_placeholder {
+  font-size: 0.875rem;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: #999;
+  box-sizing: border-box;
+  padding: 0 0.75rem;
 }
 
 .btn_sort_submit {
@@ -3570,6 +3656,7 @@ input.input_calendar {
   display: inline-block;
   flex: 0 0 2.75rem;
   box-sizing: border-box;
+  color: transparent;
   border-radius: 0.25rem;
   background: #232529 url("../images/ic_searchs_w@3x.png") no-repeat 50% 50%/1.5rem auto;
 }
@@ -3780,8 +3867,9 @@ input.input_calendar {
   .sort_long_cols {
     flex: inherit;
   }
-  input.input_calendar {
-    height: 2.75rem;
+  input.input_calendar_mb,
+input.input_calendar {
+    height: 2.75rem !important;
   }
 }
 @media (max-width: 767px) {
