@@ -92,7 +92,9 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
         &:last-of-type{margin-right:0;}
     }
 }
-.header_topmenu{display:inline-flex;align-items: center;}
+.header_topmenu{display:inline-flex;align-items: center;
+    &:hover .header_topmenu_text{text-decoration: underline;}
+}
 .header_topmenu_text{display:inline-block;font-size:rem(13);line-height:1;color:#fff;}
 .topmenu_ico{display:inline-block;width:rem(24);height:rem(24);background:url("../images/ic_wlinkopen@3x.png") no-repeat 0 0/100% auto;}
 
@@ -180,6 +182,10 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
     display:inline-block;font-size:rem(14);line-height:1;color:#fff;white-space: nowrap;
     &:hover{color:#b8c9e8 !important;}
     // &:hover{text-decoration: underline !important;}
+}
+.touchmode .footer_menu{
+    &:hover{color:#fff !important;}
+    &.touchhover{color:#b8c9e8 !important;}
 }
 
 .btn_gotop_wrap{position:fixed;bottom:rem(30);right:rem(30);z-index:20;}

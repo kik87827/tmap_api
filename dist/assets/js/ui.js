@@ -52,6 +52,8 @@ function layoutFunc() {
   const domBody = document.querySelector("body");
   const btn_gotop = document.querySelector(".btn_gotop");
 
+  const footer_menu = document.querySelectorAll(".footer_menu");
+
 
   if (btn_gotop !== null) {
     btn_gotop.addEventListener("click", (e) => {
@@ -59,6 +61,21 @@ function layoutFunc() {
       setTimeout(() => {
         window.scrollTo(0, 0);
       }, 30);
+    });
+  }
+
+  if (!!footer_menu) {
+    console.log(footer_menu);
+    footer_menu.forEach((item) => {
+      item.addEventListener("touchstart", (e) => {
+        e.currentTarget.classList.add("touchhover");
+      });
+      item.addEventListener("touchend", (e) => {
+        const etarget = e.currentTarget;
+        setTimeout(function() {
+          etarget.classList.remove("touchhover");
+        }, 100);
+      });
     });
   }
 

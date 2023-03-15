@@ -27,6 +27,27 @@
 			</div>
 		</section>
 		@@include('./include/_footer.html')
+		<!-- loading -->
+		<div class="loading_layer">
+			<div class="loading_box_w">
+				<div class="loading_box">
+					<div class="stage">
+						<div class="dot-flashing"></div>
+						<p class="loading_para">Loading</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // loading -->
+		
+		<script>
+			// 퍼블확인용
+			let url = window.location.href.split('?')[1];
+			let url_2 = url !== undefined ? url.split('#')[0] : null;
+			if(url_2 === "loading"){
+				document.querySelector(".loading_layer").classList.add("active");
+			}
+		</script>
 	</div>
 </body>
 </html>
