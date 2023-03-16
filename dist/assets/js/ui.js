@@ -65,7 +65,6 @@ function layoutFunc() {
   }
 
   if (!!footer_menu) {
-    console.log(footer_menu);
     footer_menu.forEach((item) => {
       item.addEventListener("touchstart", (e) => {
         e.currentTarget.classList.add("touchhover");
@@ -879,4 +878,27 @@ function mbDateCall() {
     })
   }
 
+}
+
+
+/**
+ * form
+ */
+function searchBox() {
+  const search_box = document.querySelectorAll(".search_box");
+  if (!search_box) {
+    return;
+  }
+  search_box.forEach((item) => {
+    const form_input = item.querySelector(".form_input");
+    if (!!form_input) {
+      console.log('1');
+      form_input.addEventListener("focus", () => {
+        item.classList.add("focus");
+      });
+      form_input.addEventListener("focusout", () => {
+        item.classList.remove("focus");
+      });
+    }
+  });
 }

@@ -4810,6 +4810,9 @@ textarea.form_textarea:focus {
   height: 3.125rem;
   padding-right: 0;
 }
+.search_box.focus {
+  border-color: #0264ff;
+}
 
 .btn_search_submit {
   flex: 0 0 3.125rem;
