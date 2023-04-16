@@ -157,49 +157,29 @@
 										</div>
 										<!-- // [230313] 수정 -->
 									</div>
+									<!-- 230416 [추가] -->
+									<div class="boxtab_list_wrap">
+										<ul class="boxtab_list">
+											<li><a href="#" class="boxtab">전체(14)</a></li>
+											<li><a href="#" class="boxtab">버스(3)</a></li>
+											<li><a href="#" class="boxtab">지하철(1)</a></li>
+											<li><a href="#" class="boxtab">버스+지하철(1)</a></li>
+											<li><a href="#" class="boxtab">고속/시외(0)</a></li>
+											<li class="active"><a href="#" class="boxtab">기차(0)</a></li>
+											<li><a href="#" class="boxtab">항공(0)</a></li>
+											<li><a href="#" class="boxtab">해운(0)</a></li>
+										</ul>
+									</div>
+									<!-- // 230416 [추가] -->
+									<!-- 230416 [수정] -->
 									<div class="api_getdata_row">
 										<ul class="api_getdata_list mode_drawer">
-											<li>
-												<a href="#" class="api_getdata_item">
-													<div class="getdata_main">1시간 44분</div>
-													<div class="getdata_sub_g">
-														<ul class="datasub_list">
-															<li><span class="datasub">도보 26분</span></li>
-															<li><span class="datasub">환승 1회</span></li>
-															<li><span class="datasub">요금 3,200원</span></li>
-															<li><span class="datasub">46.2km</span></li>
-														</ul>
-													</div>
-												</a>
-											</li>
-											<li>
-												<a href="#" class="api_getdata_item active">
-													<div class="getdata_main">1시간 44분</div>
-													<div class="getdata_sub_g">
-														<ul class="datasub_list">
-															<li><span class="datasub">도보 26분</span></li>
-															<li><span class="datasub">환승 1회</span></li>
-															<li><span class="datasub">요금 3,200원</span></li>
-															<li><span class="datasub">46.2km</span></li>
-														</ul>
-													</div>
-												</a>
-											</li>
-											<li>
-												<a href="#" class="api_getdata_item">
-													<div class="getdata_main">1시간 44분</div>
-													<div class="getdata_sub_g">
-														<ul class="datasub_list">
-															<li><span class="datasub">도보 26분</span></li>
-															<li><span class="datasub">환승 1회</span></li>
-															<li><span class="datasub">요금 3,200원</span></li>
-															<li><span class="datasub">46.2km</span></li>
-														</ul>
-													</div>
-												</a>
+											<li class="nodata_li">
+												<p class="getdata_nopara">선택된 카테고리는<br>경로 탐색 결과가 존재하지 않습니다.</p>
 											</li>
 										</ul>
 									</div>
+									<!-- // 230416 [수정] -->
 								</div>
 							</div>
 							<div class="apiform_api">
@@ -225,6 +205,63 @@
 									<p class="vitem_title">경로 탐색 결과</p>
 								</div>
 								<div class="vitem_content_row">
+									<!-- 230406 추가 -->
+									<div class="vitem_depitem">
+										<p class="vitem_dep_title">상세정보</p>
+										<div class="vitem_dep_content">
+											<div class="vitem_getdata_box">
+												<div class="timeline_list_wrap">
+													<ul class="timeline_list">
+														<li>
+															<div class="timeline_ico"><img src="./assets/images/ic_map_start_list@2x.png" alt="출발"></div>
+															<div class="timeline_spec_g">
+																<p class="timeline_spec_para">출발지명</p>
+															</div>
+														</li>
+														<li>
+															<div class="timeline_ico"><img src="./assets/images/ic_map_subway@2x.png" alt=""></div>
+															<div class="timeline_spec_g">
+																<p class="timeline_spec_para">일층약국 에서 좌회전 후 신촌로 을 따라 65m 이동</p>
+															</div>
+														</li>
+														<li>
+															<div class="timeline_ico"><img src="./assets/images/ic_map_bus@2x.png" alt=""></div>
+															<div class="timeline_spec_g">
+																<p class="timeline_spec_para">아현역(중) 승차</p>
+																<div class="timeline_emp_para_row">
+																	<p class="timeline_emp_para">간선:270 TYPE:11</p>
+																</div>
+																<p class="timeline_spec_para">청량리역환승센터(1번승강장) 하차</p>
+															</div>
+														</li>
+														<li>
+															<div class="timeline_ico"><img src="./assets/images/ic_map_walk@2x.png" alt=""></div>
+															<div class="timeline_spec_g">
+																<p class="timeline_spec_para">우회전 후 약령시로 을 따라 55m 이동</p>
+															</div>
+														</li>
+														<li>
+															<div class="timeline_ico"><img src="./assets/images/ic_map_bus@2x.png" alt=""></div>
+															<div class="timeline_spec_g">
+																<p class="timeline_spec_para">아현역(중) 승차</p>
+																<div class="timeline_emp_para_row">
+																	<p class="timeline_emp_para">간선:270 TYPE:11</p>
+																</div>
+																<p class="timeline_spec_para">청량리역환승센터(1번승강장) 하차</p>
+															</div>
+														</li>
+														<li>
+															<div class="timeline_ico"><img src="./assets/images/ic_map_end_list@2x.png" alt="도착"></div>
+															<div class="timeline_spec_g">
+																<p class="timeline_spec_para">도착지 명칭</p>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- // 230406 추가 -->
 									<div class="vitem_depitem">
 										<p class="vitem_dep_title">Request</p>
 										<div class="vitem_dep_content">
