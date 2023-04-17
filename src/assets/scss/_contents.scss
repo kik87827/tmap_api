@@ -157,7 +157,6 @@ a.line_link{text-decoration: underline;
 
     .btn_box{
         padding:rem(14);min-width:rem(110);
-        background:#eee;
         &.primary{
             .box_intext{}
         }
@@ -606,7 +605,7 @@ input.form_input{
 .btn_formsubmit_in{display:inline-block;font-size:rem(18);color:#fff;line-height:1;font-weight:500;margin-left:rem(10);}
 
 .api_getdata_zone{flex:1;display:flex;margin-top:rem(20);min-height:0;flex-direction: column;}
-.api_sort_row{flex:0;border-bottom:1px solid #e2e4ee;padding-bottom:rem(16);display:flex;}
+.api_sort_row{flex:0;/* border-bottom:1px solid #e2e4ee; */padding-bottom:rem(16);display:flex;}
 .sort_fix_cols{
     flex:0;
     &:last-of-type{}
@@ -743,9 +742,10 @@ input.input_calendar_mb{position:relative;z-index:1;flex:1;height:rem(52);color:
 .boxtab_list{
     display:flex;flex-wrap:wrap;border-bottom:1px solid #e2e4ee;margin-bottom:-2px;
     > li{
-        flex:0 0 25%;width:25%;display:flex;box-sizing:border-box;border-right:1px solid #fff;border-bottom:1px solid #fff;
+        flex:0 0 25%;width:25%;display:flex;box-sizing:border-box;border-right:1px solid #fff;border-bottom:1px solid #fff;transition:border .5s;
         &:last-of-type{}
         &:nth-of-type(4n){border-right:0;}
+        &:hover,
         &.active{
             border-color:#0264ff;
             .boxtab{background:#0264ff;color:#fff;}
@@ -754,7 +754,8 @@ input.input_calendar_mb{position:relative;z-index:1;flex:1;height:rem(52);color:
 }
 .boxtab{
     background:#f7f7f8;display:flex;width:100%;height:100%;justify-content: center;align-items: center;font-size:rem(14);color:#000000;line-height:1.4;
-    box-sizing: border-box;padding:rem(10);min-height:rem(52);text-align: center;
+    box-sizing: border-box;padding:rem(10);min-height:rem(52);text-align: center;transition:background .5s;
+    
 }
 
 .vitem_getdata_box{border:1px solid #e2e4ee;border-radius:rem(8);position:relative;overflow-y:overlay;box-sizing: border-box;height:rem(376);padding:rem(16);}

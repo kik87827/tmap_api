@@ -2566,7 +2566,6 @@ a.line_link:hover {
   .btn_box {
     padding: 0.875rem;
     min-width: 6.875rem;
-    background: #eee;
   }
   .btn_box.htype2 {
     padding: 0.625rem 1.0625rem 0.6875rem;
@@ -3491,8 +3490,7 @@ input.form_input:focus {
 }
 
 .api_sort_row {
-  flex: 0;
-  border-bottom: 1px solid #e2e4ee;
+  flex: 0; /* border-bottom:1px solid #e2e4ee; */
   padding-bottom: 1rem;
   display: flex;
 }
@@ -3814,14 +3812,15 @@ input.input_calendar_mb {
   box-sizing: border-box;
   border-right: 1px solid #fff;
   border-bottom: 1px solid #fff;
+  transition: border 0.5s;
 }
 .boxtab_list > li:nth-of-type(4n) {
   border-right: 0;
 }
-.boxtab_list > li.active {
+.boxtab_list > li:hover, .boxtab_list > li.active {
   border-color: #0264ff;
 }
-.boxtab_list > li.active .boxtab {
+.boxtab_list > li:hover .boxtab, .boxtab_list > li.active .boxtab {
   background: #0264ff;
   color: #fff;
 }
@@ -3840,6 +3839,7 @@ input.input_calendar_mb {
   padding: 0.625rem;
   min-height: 3.25rem;
   text-align: center;
+  transition: background 0.5s;
 }
 
 .vitem_getdata_box {
