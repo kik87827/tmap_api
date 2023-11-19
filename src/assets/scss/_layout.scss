@@ -225,7 +225,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
     .middle_single_title{font-size:rem(28);}
     .middle_single_content_row{margin-top:rem(55);}
 
-    .btn_gotop_wrap{display:none !important;}
+    .btn_gotop_wrap{display:block !important;}
 
     .footer_inpix{padding:rem(50) rem(20);}
     .footer_logo{width:rem(178);height:rem(16);margin-bottom:rem(12)}
@@ -236,7 +236,15 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
     }
 }
 
-
+@media (max-width: $breakpoint-phones) {
+    .btn_gotop {
+        width: 3rem!important;
+        height: 3rem!important;
+    }
+    .btn_gotop:after {
+        background: url("../images/ic_gotop_x2.png") no-repeat 50% 50%/80% auto!important;
+    }
+}
 @media (max-width:$breakpoint-phones){
     .header_inpix{padding:0 rem(16);}
     .header_menu_incont{margin:rem(100) rem(16)}

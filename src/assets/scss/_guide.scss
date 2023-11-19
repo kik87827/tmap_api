@@ -27,3 +27,96 @@
     .component_title{font-size:rem(14)}
     .guide_page_wrap{padding:rem(16)}
 }
+
+
+#map_div {
+    background:#ddd;
+    height:100%;
+    color:#000;
+    font-size:16px;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:351px
+  }
+  
+  @media (max-width: 767px) {
+    pre > code{
+      font-size: 0.8rem;
+    }
+  }
+  @media (max-width: 1280px) {
+    pre > code{
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 359px) {
+    pre > code{
+      font-size: 0.8rem;
+    }
+  }
+  pre > code{
+    /*margin: 0 50% 0 0;*/
+    tab-size: 5;
+    border-radius: 8px;
+    line-height: 27px;
+    color:#fff!important;
+  }
+  
+  /* 모바일 수평 스크롤 금지 */
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .sub_title{
+    font-size:smaller;
+    font-weight:bold;
+    color: #0264ff;
+    margin-top: 0.4375rem;
+    word-break: keep-all;
+  }
+  @media (max-width: 767px) {
+    .sub_title{
+      font-size:0.71rem;
+      margin-left:1.5rem;
+      margin-right:1.5rem;
+    }
+  }
+  .verifCheck{
+    margin-top: 0.5rem;
+    font-size: 0.752rem;
+    color: red;
+  }
+  /*@media (max-width: 767px) {*/
+  /*  .img_size{*/
+  /*    width:43.5px;*/
+  /*    height: 16.5px;*/
+  /*    object-fit: scale-down;*/
+  /*  }*/
+  /*}*/
+  /*모바일 스크롤바 설정*/
+  /*::-webkit-scrollbar {*/
+  /*  -webkit-appearance: none;*/
+  /*  -webkit-overflow-scrolling: touch;*/
+  /*}*/
+  
+  /*::-webkit-scrollbar:vertical {*/
+  /*  width: 12px;*/
+  /*}*/
+  
+  /*::-webkit-scrollbar:horizontal {*/
+  /*  height: 12px;*/
+  /*}*/
+  
+  /*::-webkit-scrollbar-thumb {*/
+  /*  background-color: rgba(0, 0, 0, .5);*/
+  /*  border-radius: 10px;*/
+  /*  border: 2px solid #ffffff;*/
+  /*}*/
+  
+  /*::-webkit-scrollbar-track {*/
+  /*  border-radius: 10px;*/
+  /*  background-color: #ffffff;*/
+  /*}*/

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('./include/_head.html')
+<body class="front_body">
+	<div class="page_wrap">
+		@@include('./include/_header.html')
+		<section class="middle_wrap">
+			<div class="middle_template">
+				<div class="middle_left_cols">
+					<div class="middle_left_item">
+						<h3 class="middle_left_title">GUIDE</h3>
+						<ul class="middle_left_list">
+							<li><a href="#" class="middle_left_menu">SK OPEN API 이용절차</a></li>
+							<li><a href="#" class="middle_left_menu">TMAP 대중교통 API 이용절차</a></li>
+							<li><a href="#" class="middle_left_menu">진입 역 기준 열차 혼잡도</a></li>
+							<li class="active"><a href="#" class="middle_left_menu">진입 역 기준 칸 혼잡도</a></li>
+							<li><a href="#" class="middle_left_menu">진입 역 기준 칸별 하차 비율</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="middle_right_cols">
+					<div class="middle_right_title_row">
+						<h2 class="middle_right_title">진입 역 기준 칸 혼잡도</h2>
+						<p class="middle_right_title_copy">특정 역으로 진입하는 열차의 칸별 혼잡도를 제공합니다.</p>
+					</div>
+					<div class="middle_right_content_row">
+						내용이 들어갑니다.
+					</div>
+				</div>
+			</div>
+		</section>
+		@@include('./include/_footer.html')
+		
+		<script>
+			// rock
+			menuRock("#menu03_04");
+
+			// 퍼블확인용
+			let url = window.location.href.split('?')[1];
+			let url_2 = url !== undefined ? url.split('#')[0] : null;
+		</script>
+	</div>
+</body>
+</html>
