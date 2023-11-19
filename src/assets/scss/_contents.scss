@@ -467,14 +467,15 @@ a.line_link{text-decoration: underline;
     &:last-of-type{}
 }
 .vitem_title_row{
-    display: flex;
+    display: flex; gap:rem(10); align-items: center;
     margin-bottom:rem(20); /* [20231119 - 유지보수] 퍼블서버에서 마진 재삽입 */
 }
+.ico_code_box{display:inline-block;  width:52px;height:22px;border-radius:rem(4); background:#0264ff url("../images/label_get@2x.png") no-repeat 50% 50%/100% auto;}
 .mgn_btt_div {
     margin-bottom: 1.25rem;
 }
   
-.vitem_title{font-size:rem(26);color:#000;line-height:1;font-weight:700;}
+.vitem_title{font-size:rem(26);color:#000;line-height:1;font-weight:700;display:inline-block;}
 .vitem_content_row{
     .code_item{}
 }

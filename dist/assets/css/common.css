@@ -3234,7 +3234,17 @@ a.line_link:hover {
 }
 .vitem_title_row {
   display: flex;
+  gap: 0.625rem;
+  align-items: center;
   margin-bottom: 1.25rem; /* [20231119 - 유지보수] 퍼블서버에서 마진 재삽입 */
+}
+
+.ico_code_box {
+  display: inline-block;
+  width: 52px;
+  height: 22px;
+  border-radius: 0.25rem;
+  background: #0264ff url("../images/label_get@2x.png") no-repeat 50% 50%/100% auto;
 }
 
 .mgn_btt_div {
@@ -3246,6 +3256,7 @@ a.line_link:hover {
   color: #000;
   line-height: 1;
   font-weight: 700;
+  display: inline-block;
 }
 
 .swiper-table .swiper-wrapper {
