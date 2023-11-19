@@ -1875,6 +1875,9 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
 .middle_right_content_row.type2 {
   margin-top: 1.25rem;
 }
+.middle_right_content_row.type3 {
+  margin-top: 0.75rem;
+}
 
 .middle_single_cont {
   max-width: 75rem;
@@ -2269,6 +2272,10 @@ a.primay_text_item:hover {
 
 .mb_br {
   display: none;
+}
+
+.mt20 {
+  margin-top: 20px !important;
 }
 
 .wid_p40 {
@@ -3123,6 +3130,18 @@ a.line_link:hover {
 .dot_text_list {
   font-size: 1rem;
   color: #666666;
+}
+.dot_text_list.type2 {
+  font-size: 0.875rem;
+}
+.dot_text_list.type2 > li {
+  margin-bottom: 0.5rem;
+}
+.dot_text_list.type2 > li:before {
+  width: 0.25rem;
+  height: 0.25rem;
+  top: 0.59375rem;
+  background-color: #666;
 }
 .dot_text_list > li {
   position: relative;

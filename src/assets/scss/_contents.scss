@@ -38,6 +38,7 @@ a.primay_text_item{
 .tablet_img{display:none !important;}
 .mobile_img{display:none !important;}
 .mb_br{display:none;}
+.mt20{margin-top:20px !important;}
 .wid_p40{max-width:40%;}
 a.line_link{text-decoration: underline;
     &:hover{color:#0264FF !important;text-decoration: underline;}
@@ -77,6 +78,11 @@ a.line_link{text-decoration: underline;
     &:hover{background:#0264ff;color:#fff;}
     &.disabled{background:#f2f5f5;color:#adb3b3;cursor:default;}
 }
+@media (max-width:$breakpoint-phones){
+
+}
+
+
 
 /* 공통 alert confirm */
 .btn_guide {display: inline-block;font-size: rem(16);padding: rem(15) rem(30);border: rem(1) solid #ddd;}
@@ -395,6 +401,13 @@ a.line_link{text-decoration: underline;
 .dash_text_g{}
 .dot_text_list{
     font-size:rem(16);color:#666666;
+    &.type2{
+        font-size:rem(14);
+        > li{
+            margin-bottom:rem(8);
+            &:before{width:rem(4);height:rem(4);top:rem(9.5);background-color: #666;}
+        }
+    }
     > li{
         position:relative;padding-left:rem(12);
         &:before{display:block;content:'';width:rem(6);height:rem(6);background-color: #202123;position:absolute;top:rem(11);left:0;border-radius:100%;}

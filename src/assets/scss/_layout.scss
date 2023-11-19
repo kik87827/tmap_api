@@ -136,6 +136,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
 .middle_right_content_row{
     margin-top:rem(60);
     &.type2{margin-top:rem(20);}
+    &.type3{margin-top:rem(12);}
 }
 
 .middle_single_cont{max-width:rem(1200);margin:0 auto;}

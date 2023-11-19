@@ -85,8 +85,20 @@
 						<h2 class="middle_right_title">진입 역 기준 열차 혼잡도</h2>
 						<p class="middle_right_title_copy">특정 역으로 진입하는 열차의 혼잡도를 제공합니다.</p>
 					</div>
-					<div class="middle_right_content_row">
-						내용이 들어갑니다.
+					<div class="middle_right_content_row type3">
+						<ul class="dot_text_list type2">
+							<li>지정한 운행 시간대(05:30 ~ 23:50)에 특정 역으로 진입하는 일반/급행 열차에 대해 시작역(발), 종착역(행), 이전역 조합에 따른 혼잡도 데이터를 10분 간격으로 제공합니다.</li>
+							<li>특정 시작역(발)과 종착역(행)의 조합으로 운행하지 않는 시간대에는 혼잡도 값이 '0'으로 제공될 수 있습니다.</li>
+							<li>요일 및 시간대를 입력하지 않으면 요청 시간을 기준으로 동일한 요일 및 시간대 데이터를 반환합니다.</li>
+						</ul>
+						<div class="guide_copybox mt20">
+							<p class="copybox_para">
+								API 서비스에 대한 모든 요청은 HTTPS를 사용합니다.<br>
+								요청 헤더에 발급 받은 appKey 값을 반드시 포함해야 합니다.<br>
+								응답 형식은 JSON을 지원합니다. 응답 실패 시 [에러코드]를 확인하세요.<br>
+								요청 파라미터는 앰퍼샌드(&)를 사용하여 구분합니다.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
