@@ -11,6 +11,9 @@
        .auto_cols.wid_04{} 
        .auto_cols.wid_05{} 
        .long_cols{} 
+       &.wid_type2{
+         .auto_cols.wid_01{width:16%;} 
+       }
     }
     &.response_parameters_table{
        .auto_cols.wid_01{width:33%;} 
@@ -18,12 +21,21 @@
        .auto_cols.wid_03{} 
        .auto_cols.wid_04{} 
        .long_cols{} 
+       &.wid_type2{
+         .auto_cols.wid_01{width:25%;} 
+         .auto_cols.wid_02{width:16%;} 
+         .auto_cols.wid_03{width:16%;} 
+       }
     }
     &.error_table{
        .auto_cols.wid_01{} 
        .auto_cols.wid_02{} 
        .auto_cols.wid_03{} 
        .long_cols{} 
+       &.wid_type2{
+         .auto_cols.wid_01{width:35%;} 
+         .auto_cols.wid_02{width:16%;} 
+       }
     }
     &.trans_subway_table{
        .auto_cols.wid_01{width:20%;} 
@@ -69,6 +81,17 @@
    .data_table{
       &.basic_table{
          min-width:rem(730);
+      }
+      &.error_table{
+         /* &.wid_type2{
+           .auto_cols.wid_01{width:auto;} 
+           .auto_cols.wid_02{width:auto;} 
+         } */
+      }
+      &.response_parameters_table{
+         &.wid_type2{
+           .auto_cols.wid_01{width:28%;} 
+         }
       }
    }
 }

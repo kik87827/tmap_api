@@ -529,6 +529,7 @@ a.line_link{text-decoration: underline;
             &.pos4{left:rem(60)}
             &.pos5{left:rem(80)}
         }
+        .data_tdlabel{padding-right:rem(20)}
     }
 }
 .data_tdtext_g{
@@ -1011,6 +1012,9 @@ input.input_calendar_mb{position:relative;z-index:1;flex:1;height:rem(52);color:
         .swiper-scrollbar{position:static;margin-top:rem(5);width:100%;background:#fff;
             .swiper-scrollbar-drag{background:rgba(0,0,0,0.2);}
         }
+        &.type2{
+            .swiper-slide{width:100%;}
+        }
     }
     
     .getdata_main{font-size:rem(16);}
@@ -1051,7 +1055,13 @@ input.input_calendar_mb{position:relative;z-index:1;flex:1;height:rem(52);color:
     .boxtab{padding:rem(5)}
     .vitem_getdata_box{height:rem(345);}
 }
-
+@media (max-width:$breakpoint-largephones){
+    .swiper-drag-wrap {
+        &.type2{
+            .swiper-slide{width:auto;}
+        }
+    }
+}
 
 
 /* main 공지팝업 */

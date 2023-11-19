@@ -64,11 +64,7 @@
     color:#fff!important;
   }
   
-  /* 모바일 수평 스크롤 금지 */
-  html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
+ 
   
   .sub_title{
     font-size:smaller;
@@ -78,6 +74,13 @@
     word-break: keep-all;
   }
   @media (max-width: 767px) {
+     /* 모바일 수평 스크롤 금지 */
+     /* [20231119 - 유지보수] 퍼블서버에서 모바일 미디어쿼리로 이동 */
+     html, body {
+       max-width: 100%;
+       overflow-x: hidden;
+      }
+    /* // [20231119 - 유지보수] 퍼블서버에서 모바일 미디어쿼리로 이동 */
     .sub_title{
       font-size:0.71rem;
       margin-left:1.5rem;

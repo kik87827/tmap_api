@@ -3343,6 +3343,9 @@ a.line_link:hover {
 .data_tdlabel.has_dep .depbar.pos5 {
   left: 5rem;
 }
+.data_tdlabel.has_dep .data_tdlabel {
+  padding-right: 1.25rem;
+}
 
 .data_tdtext_g .data_tdtext {
   margin-bottom: 1.875rem;
@@ -4246,6 +4249,9 @@ input.input_calendar {
   .swiper-drag-wrap .swiper-scrollbar .swiper-scrollbar-drag {
     background: rgba(0, 0, 0, 0.2);
   }
+  .swiper-drag-wrap.type2 .swiper-slide {
+    width: 100%;
+  }
   .getdata_main {
     font-size: 1rem;
   }
@@ -4299,6 +4305,11 @@ input.input_calendar {
   }
   .vitem_getdata_box {
     height: 21.5625rem;
+  }
+}
+@media (max-width: 550px) {
+  .swiper-drag-wrap.type2 .swiper-slide {
+    width: auto;
   }
 }
 /* main 공지팝업 */
@@ -6614,8 +6625,26 @@ li.type2 .keyvalue_number {
 .data_table.basic_table .fix_cols {
   width: 26.8456375839%;
 }
+.data_table.request_parameters_table.wid_type2 .auto_cols.wid_01 {
+  width: 16%;
+}
 .data_table.response_parameters_table .auto_cols.wid_01 {
   width: 33%;
+}
+.data_table.response_parameters_table.wid_type2 .auto_cols.wid_01 {
+  width: 25%;
+}
+.data_table.response_parameters_table.wid_type2 .auto_cols.wid_02 {
+  width: 16%;
+}
+.data_table.response_parameters_table.wid_type2 .auto_cols.wid_03 {
+  width: 16%;
+}
+.data_table.error_table.wid_type2 .auto_cols.wid_01 {
+  width: 35%;
+}
+.data_table.error_table.wid_type2 .auto_cols.wid_02 {
+  width: 16%;
 }
 .data_table.trans_subway_table {
   white-space: nowrap;
@@ -6662,6 +6691,15 @@ li.type2 .keyvalue_number {
 @media (max-width: 767px) {
   .data_table.basic_table {
     min-width: 45.625rem;
+  }
+  .data_table.error_table {
+    /* &.wid_type2{
+      .auto_cols.wid_01{width:auto;} 
+      .auto_cols.wid_02{width:auto;} 
+    } */
+  }
+  .data_table.response_parameters_table.wid_type2 .auto_cols.wid_01 {
+    width: 28%;
   }
 }
 @media (max-width: 420px) {
@@ -6797,12 +6835,6 @@ pre > code {
   color: #fff !important;
 }
 
-/* 모바일 수평 스크롤 금지 */
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
 .sub_title {
   font-size: smaller;
   font-weight: bold;
@@ -6812,6 +6844,13 @@ html, body {
 }
 
 @media (max-width: 767px) {
+  /* 모바일 수평 스크롤 금지 */
+  /* [20231119 - 유지보수] 퍼블서버에서 모바일 미디어쿼리로 이동 */
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  /* // [20231119 - 유지보수] 퍼블서버에서 모바일 미디어쿼리로 이동 */
   .sub_title {
     font-size: 0.71rem;
     margin-left: 1.5rem;
