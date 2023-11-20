@@ -24,7 +24,259 @@
 						<p class="middle_right_title_copy">특정 역으로 진입하는 열차의 칸별 혼잡도를 제공합니다.</p>
 					</div>
 					<div class="middle_right_content_row">
-						내용이 들어갑니다.
+						<div class="apiform_wrap">
+							<div class="apiform_field">
+								<div class="form_box full_box">
+									<div class="form_row">
+										<p class="import_para">1호선, 서울역, 월요일, 오전 7시 순으로 선택해주세요.</p>
+									</div>
+									<div class="form_row">
+										<div class="combo_item fluid" id="combo_line">
+											<a href="javascript:;" class="combo_target">노선</a>
+											<div class="combo_option_group">
+												<div class="combo_option_scroll">
+													<ul class="combo_option_list">
+														<li><a href="javascript:;" data-value="option_0" class="combo_option">1호선</a></li>
+														<li><a href="javascript:;" data-value="option_1" class="combo_option">2호선</a></li>
+														<li><a href="javascript:;" data-value="option_2" class="combo_option">3호선</a></li>
+														<li><a href="javascript:;" data-value="option_3" class="combo_option">4호선</a></li>
+														<li><a href="javascript:;" data-value="option_4" class="combo_option">5호선</a></li>
+														<li><a href="javascript:;" data-value="option_5" class="combo_option">6호선</a></li>
+														<li><a href="javascript:;" data-value="option_6" class="combo_option">7호선</a></li>
+														<li><a href="javascript:;" data-value="option_7" class="combo_option">8호선</a></li>
+														<li><a href="javascript:;" data-value="option_8" class="combo_option">9호선</a></li>
+														<li><a href="javascript:;" data-value="option_9" class="combo_option">신분당선</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form_row">
+										<div class="combo_item fluid" id="combo_station">
+											<a href="javascript:;" class="combo_target">역명칭</a>
+											<div class="combo_option_group">
+												<div class="combo_option_scroll">
+													<ul class="combo_option_list">
+														<li><a href="javascript:;" data-value="option_0" class="combo_option">신사역</a></li>
+														<li><a href="javascript:;" data-value="option_1" class="combo_option">강남역</a></li>
+														<li><a href="javascript:;" data-value="option_2" class="combo_option">신도림역</a></li>
+														<li><a href="javascript:;" data-value="option_3" class="combo_option">학동역</a></li>
+														<li><a href="javascript:;" data-value="option_4" class="combo_option">청담역</a></li>
+														<li><a href="javascript:;" data-value="option_5" class="combo_option">구로디지털단지역</a></li>
+														<li><a href="javascript:;" data-value="option_6" class="combo_option">이하생략</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form_row has_cols_row">
+										<div class="form_cols">
+											<div class="combo_item fluid" id="combo_day">
+												<a href="javascript:;" class="combo_target">요일</a>
+												<div class="combo_option_group">
+													<div class="combo_option_scroll">
+														<ul class="combo_option_list">
+															<li><a href="javascript:;" data-value="option_0" class="combo_option">월요일</a></li>
+															<li><a href="javascript:;" data-value="option_1" class="combo_option">화요일</a></li>
+															<li><a href="javascript:;" data-value="option_2" class="combo_option">수요일</a></li>
+															<li><a href="javascript:;" data-value="option_3" class="combo_option">목요일</a></li>
+															<li><a href="javascript:;" data-value="option_4" class="combo_option">금요일</a></li>
+															<li><a href="javascript:;" data-value="option_5" class="combo_option">토요일</a></li>
+															<li><a href="javascript:;" data-value="option_6" class="combo_option">일요일</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form_cols">
+											<div class="combo_item fluid" id="combo_time">
+												<a href="javascript:;" class="combo_target">시간</a>
+												<div class="combo_option_group">
+													<div class="combo_option_scroll">
+														<ul class="combo_option_list">
+															<li><a href="javascript:;" data-value="option_0" class="combo_option">05시</a></li>
+															<li><a href="javascript:;" data-value="option_1" class="combo_option">06시</a></li>
+															<li><a href="javascript:;" data-value="option_2" class="combo_option">07시</a></li>
+															<li><a href="javascript:;" data-value="option_3" class="combo_option">08시</a></li>
+															<li><a href="javascript:;" data-value="option_4" class="combo_option">09시</a></li>
+															<li><a href="javascript:;" data-value="option_5" class="combo_option">이하생략</a></li>
+															<li><a href="javascript:;" data-value="option_6" class="combo_option">23시</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form_row control_row type2">
+										<div class="control_cols">
+											<a href="#" class="btn_textitem ico_refresh"><span class="textitem_in">다시입력</span></a>
+										</div>
+										<div class="control_cols">
+											<a href="#" class="btn_formsubmit ico_search"><span class="btn_formsubmit_in">길찾기</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="apiform_api">
+								<!-- api render -->
+								<div style="background:#ddd;height:100%;color:#000;font-size:16px;text-align:center;display:flex;align-items:center;justify-content:center;min-height:710px">
+									api render
+									<!-- icon sample -->
+									<img src="./assets/images/ic_map_subway2@2x.png" style="width:38px;height:42px;position:absolute;top:10px;left:10px;" alt="">
+									<!-- // icon sample -->
+								</div>
+								<!-- // api render -->
+							</div>
+						</div>
+						<div class="vertical_item_wrap">
+							<div class="vertical_item type2">
+								<div class="vitem_title_row"><p class="vitem_title">칸 혼잡도 결과</p></div>
+								<div class="vitem_content_row">
+									<div class="vitem_depitem">
+										<p class="vitem_content_copy">검색한 역으로 진입하는 대표 열차의 칸별 혼잡도입니다.</p>
+										<div class="train_chart_item_wrap">
+											<div class="train_chart_item">
+												<p class="chart_box_title"><strong class="emp">잠실</strong> 방면</p>
+												<div class="train_chart_track">
+													<div class="track_cols" style="background-color:#75d63d;"><span class="chart_track_text">1</span></div>
+													<div class="track_cols" style="background-color:#f9cb12;"><span class="chart_track_text">2</span></div>
+													<div class="track_cols" style="background-color:#f9cb12;"><span class="chart_track_text">3</span></div>
+													<div class="track_cols" style="background-color:#ff814a;"><span class="chart_track_text">4</span></div>
+													<div class="track_cols" style="background-color:#ff814a;"><span class="chart_track_text">5</span></div>
+													<div class="track_cols" style="background-color:#f9cb12;"><span class="chart_track_text">6</span></div>
+													<div class="track_cols" style="background-color:#eb3b3b;"><span class="chart_track_text">7</span></div>
+													<div class="track_cols" style="background-color:#eb3b3b;"><span class="chart_track_text">8</span></div>
+													<div class="track_cols" style="background-color:#ff814a;"><span class="chart_track_text">9</span></div>
+													<div class="track_cols" style="background-color:#75d63d;"><span class="chart_track_text">10</span></div>
+												</div>
+											</div>
+											<div class="train_chart_item">
+												<p class="chart_box_title"><strong class="emp">사당</strong> 방면</p>
+												<div class="train_chart_track">
+													<div class="track_cols" style="background-color:#75d63d;"><span class="chart_track_text">1</span></div>
+													<div class="track_cols" style="background-color:#f9cb12;"><span class="chart_track_text">2</span></div>
+													<div class="track_cols" style="background-color:#f9cb12;"><span class="chart_track_text">3</span></div>
+													<div class="track_cols" style="background-color:#ff814a;"><span class="chart_track_text">4</span></div>
+													<div class="track_cols" style="background-color:#ff814a;"><span class="chart_track_text">5</span></div>
+													<div class="track_cols" style="background-color:#f9cb12;"><span class="chart_track_text">6</span></div>
+													<div class="track_cols" style="background-color:#eb3b3b;"><span class="chart_track_text">7</span></div>
+													<div class="track_cols" style="background-color:#eb3b3b;"><span class="chart_track_text">8</span></div>
+													<div class="track_cols" style="background-color:#ff814a;"><span class="chart_track_text">9</span></div>
+													<div class="track_cols" style="background-color:#75d63d;"><span class="chart_track_text">10</span></div>
+												</div>
+											</div>
+											<div class="train_chart_item">
+												<p class="chart_box_title"><strong class="emp">잠실</strong> 방면 - 8량(sample)</p>
+												<div class="train_chart_track">
+													<div class="track_cols" style="background-color:#75d63d;"><span class="chart_track_text">1</span></div>
+													<div class="track_cols" style="background-color:#f9cb12;"><span class="chart_track_text">2</span></div>
+													<div class="track_cols" style="background-color:#f9cb12;"><span class="chart_track_text">3</span></div>
+													<div class="track_cols" style="background-color:#ff814a;"><span class="chart_track_text">4</span></div>
+													<div class="track_cols" style="background-color:#ff814a;"><span class="chart_track_text">5</span></div>
+													<div class="track_cols" style="background-color:#f9cb12;"><span class="chart_track_text">6</span></div>
+													<div class="track_cols" style="background-color:#eb3b3b;"><span class="chart_track_text">7</span></div>
+													<div class="track_cols" style="background-color:#eb3b3b;"><span class="chart_track_text">8</span></div>
+												</div>
+											</div>
+											<div class="train_chart_item">
+												<p class="chart_box_title"><strong class="emp">사당</strong> 방면 - 6량(sample)</p>
+												<div class="train_chart_track">
+													<div class="track_cols" style="background-color:#75d63d;"><span class="chart_track_text">1</span></div>
+													<div class="track_cols" style="background-color:#f9cb12;"><span class="chart_track_text">2</span></div>
+													<div class="track_cols" style="background-color:#f9cb12;"><span class="chart_track_text">3</span></div>
+													<div class="track_cols" style="background-color:#ff814a;"><span class="chart_track_text">4</span></div>
+													<div class="track_cols" style="background-color:#ff814a;"><span class="chart_track_text">5</span></div>
+													<div class="track_cols" style="background-color:#f9cb12;"><span class="chart_track_text">6</span></div>
+												</div>
+											</div>
+											<div class="train_chart_item">
+												<p class="chart_box_title"><strong class="emp">사당</strong> 방면 - 4량(sample)</p>
+												<div class="train_chart_track">
+													<div class="track_cols" style="background-color:#75d63d;"><span class="chart_track_text">1</span></div>
+													<div class="track_cols" style="background-color:#75d63d;"><span class="chart_track_text">2</span></div>
+													<div class="track_cols" style="background-color:#eb3b3b;"><span class="chart_track_text">3</span></div>
+													<div class="track_cols" style="background-color:#eb3b3b;"><span class="chart_track_text">4</span></div>
+												</div>
+											</div>
+										</div>
+										<div class="chart_guide_bar_wrap">
+											<ul class="chart_guide_bar_list">
+												<li>
+													<span class="chart_guide_text">여유</span>
+													<div class="chart_bar_sample" style="background-color:#75d63d;"></div>
+												</li>
+												<li>
+													<span class="chart_guide_text">보통</span>
+													<div class="chart_bar_sample" style="background-color:#f9cb12;"></div>
+												</li>
+												<li>
+													<span class="chart_guide_text">혼잡</span>
+													<div class="chart_bar_sample" style="background-color:#ff814a"></div>
+												</li>
+												<li>
+													<span class="chart_guide_text">매우혼잡</span>
+													<div class="chart_bar_sample" style="background-color:#eb3b3b;"></div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="vitem_depitem">
+										<p class="vitem_dep_title">Request</p>
+										<div class="vitem_dep_content">
+											<div class="code_item">
+												<!-- code -->
+												<div style="background-color: #202123;padding: 16px;border-radius: 8px;color:#fff;">
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample
+												</div>
+												<!-- // code -->
+											</div>
+										</div>
+									</div>
+									<div class="vitem_depitem">
+										<div class="vitem_dep_title_row">
+											<p class="vitem_dep_title">Response</p>
+										</div>
+										<div class="vitem_dep_content">
+											<div class="code_item">
+												<!-- code -->
+												<div style="background-color: #202123;padding: 16px;border-radius: 8px;color:#fff;">
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample<br>
+													code sample
+												</div>
+												<!-- // code -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -34,6 +286,35 @@
 		<script>
 			// rock
 			menuRock("#menu03_04");
+
+			// combobox
+			comboFunc();
+
+			// combobox callback
+			comboChangeCallback({
+				target: "combo_line",
+				callback(value) {
+					console.log(value);
+				}
+			});
+			comboChangeCallback({
+				target: "combo_station",
+				callback(value) {
+					console.log(value);
+				}
+			});
+			comboChangeCallback({
+				target: "combo_day",
+				callback(value) {
+					console.log(value);
+				}
+			});
+			comboChangeCallback({
+				target: "combo_time",
+				callback(value) {
+					console.log(value);
+				}
+			});
 
 			// 퍼블확인용
 			let url = window.location.href.split('?')[1];

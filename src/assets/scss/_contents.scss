@@ -639,6 +639,30 @@ a.line_link{text-decoration: underline;
 .chart_guide_text{display:inline-block;color:#666666;line-height:1; font-size:rem(11);}
 .chart_bar_sample{height:rem(4);width:100%;}
 
+.train_chart_item_wrap{
+    border-radius: rem(8); margin-top:rem(20);
+    border: solid 1px #e2e4ee;
+    background-color: #fff;}
+.train_chart_item{
+    border-bottom: solid 1px #e2e4ee;padding: rem(16);
+    &:last-of-type{border-bottom:0;}
+    .chart_box_title{margin-bottom:rem(8);}
+    .swiper-container.swiper-drag-wrap{}
+}
+.train_chart_track{display:flex;height:rem(28);gap:rem(10);white-space: nowrap;
+    &.type2{
+        .chart_track_text{color:#666;}
+    }
+}
+.track_cols{flex:1;min-width:0;border-radius:rem(2); display:flex;align-items: center; justify-content: center;}
+.chart_track_text{ font-size: 11px; display:inline-block;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    color: #fff;
+}
+
+
 .mrg_bm {
     margin-bottom: 1.25rem;
   }
@@ -1023,6 +1047,8 @@ input.input_calendar_mb{position:relative;z-index:1;flex:1;height:rem(52);color:
         }
     }
     .chart_box_wrap{margin-top:rem(14)}
+
+    .train_chart_track{gap:rem(4);}
 }
 
 @media (max-width:$breakpoint-phones){
