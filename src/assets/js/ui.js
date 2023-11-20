@@ -532,7 +532,7 @@ function swiperTable(){
     });
     appendOption = document.querySelector(`[data-option='${thisParent.getAttribute("id")}']`);
     combo_option_scroll = appendOption.querySelector(".combo_option_scroll");
-    appendOptionListOption = combo_option_scroll.getAttribute("data-rowCount") !== undefined ? combo_option_scroll.getAttribute("data-rowCount") : 5;
+    appendOptionListOption = combo_option_scroll.getAttribute("data-rowCount") !== null ? combo_option_scroll.getAttribute("data-rowCount") : 5;
     combo_option_group.forEach((element) => {
       if (element !== appendOption) {
         element.classList.remove("active");
@@ -545,8 +545,9 @@ function swiperTable(){
         return;
       }
       if (appendOption.querySelectorAll("li")[appendOptionListOption] !== undefined) {
-        combo_option_scroll.style.maxHeight = `${appendOption.querySelectorAll("li")[appendOptionListOption].offsetTop+7}px`;
+        combo_option_scroll.style.maxHeight = `${appendOption.querySelectorAll("li")[appendOptionListOption].offsetTop/* +7 */}px`;
       }
+      console.log(appendOptionListOption);
       combo_option_scroll.classList.add("addHeight");
     }
   });

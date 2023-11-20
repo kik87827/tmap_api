@@ -2305,6 +2305,9 @@ a.line_link:hover {
   border-radius: 0.25rem 0.25rem 0 0;
   border-bottom: 0;
 }
+.combo_item.fluid {
+  display: block;
+}
 
 .combo_target {
   font-size: 0.875rem;
@@ -3232,6 +3235,13 @@ a.line_link:hover {
 .vertical_item {
   margin-top: 5rem;
 }
+.vertical_item.type2 .vitem_title_row {
+  margin-bottom: 0.75rem;
+}
+.vertical_item.type2 .vitem_depitem:first-of-type {
+  margin-top: 0;
+}
+
 .vitem_title_row {
   display: flex;
   gap: 0.625rem;
@@ -3424,6 +3434,120 @@ a.line_link:hover {
   font-weight: 700;
 }
 
+.vitem_content_copy {
+  font-size: 1rem;
+  text-align: left;
+  color: #000;
+}
+
+.chart_box_wrap {
+  display: flex;
+  margin-top: 1.25rem;
+  border-radius: 0.5rem;
+  border: solid 1px #e2e4ee;
+  background-color: #fff;
+}
+
+.chart_box_cols {
+  padding: 1rem;
+  flex: 1;
+  min-width: 0;
+  border-right: solid 1px #e2e4ee;
+}
+.chart_box_cols:last-of-type {
+  border-right: 0;
+}
+
+.chart_box_title {
+  font-size: 0.875rem;
+}
+.chart_box_title .emp {
+  color: #000;
+}
+
+.timeline_chart_render {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 7px;
+}
+
+.timeline_chart_key_cols {
+  flex: 0;
+  white-space: nowrap;
+  font-size: 0;
+  line-height: 0;
+  padding-bottom: 0.1875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1875rem;
+}
+
+.timeline_chart_key {
+  display: flex;
+  height: 0.9375rem;
+  align-items: center;
+}
+
+.chart_key_text {
+  font-size: 0.625rem;
+  color: #666666;
+  display: inline-block;
+}
+
+.timeline_chart_value_cols {
+  flex: 1;
+  min-width: 0;
+  border-left: 1px solid #e2e4ee;
+  border-bottom: 1px solid #e2e4ee;
+  padding-bottom: 0.1875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1875rem;
+}
+
+.timeline_value_bar {
+  height: 0.9375rem;
+  position: relative;
+}
+
+.timeline_value_current {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 0.375rem;
+  transform: translateY(-50%);
+}
+
+.chart_guide_bar_wrap {
+  margin-top: 0.75rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.chart_guide_bar_list {
+  display: flex;
+}
+.chart_guide_bar_list > li {
+  flex: 0 0 3rem;
+  width: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+.chart_guide_text {
+  display: inline-block;
+  color: #666666;
+  line-height: 1;
+  font-size: 0.6875rem;
+}
+
+.chart_bar_sample {
+  height: 0.25rem;
+  width: 100%;
+}
+
 .mrg_bm {
   margin-bottom: 1.25rem;
 }
@@ -3445,6 +3569,10 @@ a.line_link:hover {
   border-radius: 0.5rem;
   background-color: #f7f7f8;
 }
+.form_box.full_box {
+  height: 100%;
+  box-sizing: border-box;
+}
 
 .form_row {
   margin-bottom: 0.625rem;
@@ -3457,6 +3585,40 @@ a.line_link:hover {
   justify-content: space-between;
   align-items: center;
   line-height: 0;
+}
+.form_row.control_row.type2 {
+  margin-top: 16px;
+}
+.form_row.has_cols_row {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.form_cols {
+  flex: 1;
+  min-width: 0;
+}
+
+.import_para {
+  position: relative;
+  padding-left: 1.5rem;
+  min-height: 1.25rem;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  text-align: left;
+  color: #666;
+}
+.import_para:before {
+  display: block;
+  content: "";
+  width: 1.25rem;
+  height: 1.25rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: url("../images/ic_info_mini@2x.png") no-repeat 50% 50%/100% auto;
 }
 
 input.form_input {
@@ -4146,6 +4308,18 @@ input.input_calendar {
   .getdata_nopara {
     font-size: 0.875rem;
   }
+  .form_box .import_para {
+    margin-bottom: 0.375rem;
+  }
+  .form_box.full_box {
+    height: auto;
+  }
+  .form_box.full_box .form_row {
+    margin-bottom: 0.625rem;
+  }
+  .chart_box_wrap {
+    margin-top: 0.875rem;
+  }
 }
 @media (max-width: 767px) {
   .img_step_list {
@@ -4316,6 +4490,22 @@ input.input_calendar {
   }
   .vitem_getdata_box {
     height: 21.5625rem;
+  }
+  .vitem_content_copy {
+    font-size: 0.875rem;
+  }
+  .chart_box_wrap {
+    flex-direction: column;
+  }
+  .chart_box_cols {
+    border: 0;
+    border-bottom: 1px solid #e2e4ee;
+  }
+  .chart_box_cols:last-of-type {
+    border: 0;
+  }
+  .chart_guide_bar_wrap {
+    margin-right: 0.9375rem;
   }
 }
 @media (max-width: 550px) {
