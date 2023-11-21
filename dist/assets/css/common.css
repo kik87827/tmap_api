@@ -1556,7 +1556,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 20;
+  z-index: 30;
   background-image: linear-gradient(to right, #f445ba, #783bff);
 }
 .header_wrap.type2 .header_inpix {
@@ -1778,6 +1778,8 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
   padding: 6.25rem 1.25rem;
   box-sizing: border-box;
   min-height: 41.875rem;
+  position: relative;
+  overflow-x: hidden;
 }
 .middle_wrap.type2 {
   background-color: #f2f5fb;
@@ -4364,9 +4366,6 @@ input.input_calendar {
   }
   .chart_box_wrap {
     margin-top: 0.875rem;
-  }
-  .train_chart_track {
-    gap: 0.25rem;
   }
 }
 @media (max-width: 767px) {
@@ -7095,10 +7094,10 @@ pre > code {
 @media (max-width: 767px) {
   /* 모바일 수평 스크롤 금지 */
   /* [20231119 - 유지보수] 퍼블서버에서 모바일 미디어쿼리로 이동 */
-  html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
+  /*  html, body {
+     max-width: 100%;
+     overflow-x: hidden;
+    } */
   /* // [20231119 - 유지보수] 퍼블서버에서 모바일 미디어쿼리로 이동 */
   .sub_title {
     font-size: 0.71rem;

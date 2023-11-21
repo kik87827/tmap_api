@@ -6,7 +6,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
 .front_body{}
 .page_wrap{min-width:rem(280);}
 .header_wrap{
-    position:sticky;top:0;left:0;z-index:20;
+    position:sticky;top:0;left:0;z-index:30;
     // background-image: linear-gradient(to right, #f445ba, #783bff 32%, #0264ff 67%, #2ed9b7);
     background-image: linear-gradient(to right, #f445ba, #783bff);
     &.type2{
@@ -98,7 +98,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
 .header_topmenu_text{display:inline-block;font-size:rem(13);line-height:1;color:#fff;}
 .topmenu_ico{display:inline-block;width:rem(24);height:rem(24);background:url("../images/ic_wlinkopen@3x.png") no-repeat 0 0/100% auto;}
 
-.middle_wrap{padding:rem(100) rem(20);box-sizing: border-box;min-height:rem(670);
+.middle_wrap{padding:rem(100) rem(20);box-sizing: border-box;min-height:rem(670); position:relative; overflow-x:hidden;
     &.type2{background-color: #f2f5fb;padding:rem(20);display:flex;justify-content: center; align-items: center;}
     &.single_type{
 
