@@ -4554,6 +4554,9 @@ input.input_calendar {
   .chart_guide_bar_wrap {
     margin-right: 0.9375rem;
   }
+  .train_chart_track {
+    gap: 0.25rem;
+  }
 }
 @media (max-width: 550px) {
   .swiper-drag-wrap.type2 .swiper-slide {
