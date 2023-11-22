@@ -1778,8 +1778,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
   padding: 6.25rem 1.25rem;
   box-sizing: border-box;
   min-height: 41.875rem;
-  position: relative;
-  overflow-x: hidden;
+  position: relative; /*  overflow-x:hidden; */
 }
 .middle_wrap.type2 {
   background-color: #f2f5fb;
@@ -1801,6 +1800,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
 
 .middle_left_item {
   position: relative;
+  transition: 0.4s;
 }
 .middle_left_item.sticky {
   position: -webkit-sticky;
@@ -1854,6 +1854,8 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
 .middle_right_cols {
   flex: 1;
   min-width: 0;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .middle_right_title {
